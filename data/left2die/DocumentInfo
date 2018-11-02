@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocInfo>
+    <Icon>
+        <Value>Assets\Arcade Images - Left 2 Die\UI_Arcade_IconBlizzLeft2Die.tga</Value>
+    </Icon>
+    <Dependencies>
+        <Value>bnet:Liberty (Mod)/0.0/999,file:Mods/Liberty.SC2Mod</Value>
+        <Value>bnet:Liberty (Campaign)/0.0/999,file:Campaigns/Liberty.SC2Campaign</Value>
+        <Value>bnet:Liberty Story (Campaign)/0.0/999,file:Campaigns/LibertyStory.SC2Campaign</Value>
+        <Value>bnet:Left 2 Die (Mod)/0.0/1023,file:Mods\Left2Die.SC2Mod</Value>
+    </Dependencies>
+    <Screenshot>
+        <File>
+            <Value>Assets\Arcade Images - Left 2 Die\L2D_Advanced_01.tga</Value>
+            <Value>Assets\Arcade Images - Left 2 Die\L2D_Advanced_02.tga</Value>
+            <Value>Assets\Arcade Images - Left 2 Die\L2D_Advanced_03.tga</Value>
+            <Value>Assets\Arcade Images - Left 2 Die\L2D_AdvanceD_04.tga</Value>
+        </File>
+        <CaptionId>
+            <Value>1</Value>
+            <Value>2</Value>
+            <Value>3</Value>
+            <Value>4</Value>
+        </CaptionId>
+        <Flags>
+            <Value> </Value>
+            <Value> </Value>
+            <Value> </Value>
+            <Value> </Value>
+        </Flags>
+    </Screenshot>
+    <ScreenshotHowToPlay>
+        <File>
+            <Value>Assets\Arcade Images - Left 2 Die\L2D_HowToPlay_01.tga</Value>
+            <Value>Assets\Arcade Images - Left 2 Die\L2D_HowToPlay_02.tga</Value>
+            <Value>Assets\Arcade Images - Left 2 Die\L2D_HowToPlay_03.tga</Value>
+            <Value>Assets\Arcade Images - Left 2 Die\L2D_HowToPlay_04.tga</Value>
+        </File>
+        <CaptionId>
+            <Value>1</Value>
+            <Value>2</Value>
+            <Value>3</Value>
+            <Value>4</Value>
+        </CaptionId>
+        <Flags>
+            <Value> </Value>
+            <Value> </Value>
+            <Value> </Value>
+            <Value> </Value>
+        </Flags>
+    </ScreenshotHowToPlay>
+    <PatchNote>
+        <Version>
+            <Value>1.0</Value>
+        </Version>
+        <Date>
+            <Value>7/25/2012</Value>
+        </Date>
+        <Notes>
+            <Value>1</Value>
+        </Notes>
+    </PatchNote>
+</DocInfo>

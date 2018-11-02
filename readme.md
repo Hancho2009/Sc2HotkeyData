@@ -42,7 +42,6 @@ campaigns\voidstory.sc2campaign -> voidstory
 
 mods\alliedcommanders.sc2mod -> alliedcommanders
 mods\core.sc2mod -> core
-mods\ -> left2die
 mods\liberty.sc2mod -> liberty
 mods\libertymulti.sc2mod -> libertymulti
 mods\missionpacks\ -> novacampaign
@@ -52,13 +51,21 @@ mods\swarmmulti.sc2mod -> swarmmulti
 mods\void.sc2mod -> void
 mods\voidmulti.sc2mod -> voidmulti
 mods\voidprologue.sc2mod -> voidprologue
-
 mods\challenges.sc2mod -> challenges
 mods\war3.sc2mod -> war3
 mods\war3data.sc2mod -> war3data
 mods\novabasic03.sc2mod -> novabasic03
 mods\balancemulti.sc2mod -> balancemulti
-mods/campaigncommon.sc2mod -> campaigncommon
+mods\campaigncommon.sc2mod -> campaigncommon
+
+To get the information from arcade maps and mods:
+Open the sc2 map editor. File -> Open...
+On the "Open Dcoument" Dialog go to the Tab Blizzard.
+Download and open the entry you want i.e. Left 2 Die
+Than File -> Save As... -> choose .SC2Map or .SC2Mod and save it.
+Open the saved file with the MPQ Editor http://zezula.net/en/mpq/download.html
+
+arcade Left 2 Die -> left2die
 
 ##### Some loosely used terminology:
 **Button:** The squary things you can click on.  
