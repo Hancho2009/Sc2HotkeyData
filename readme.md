@@ -33,30 +33,30 @@ from campaigns and mods folder comes the files from the data folder.
 ButtonData.xml and UnitData.xml are from the base.sc2data folders.
 GameHotkeys.txt are from the enus.sc2data\LocalizedData folders.
 
-campaigns\liberty.sc2campaign -> libertycampaign
-campaigns\libertystory.sc2campaign -> libertystory
-campaigns\swarm.sc2campaign -> swarmcampaign
-campaigns\swarmstory.sc2campaign -> swarmstory
-campaigns\void.sc2campaign -> voidcampaign
-campaigns\voidstory.sc2campaign -> voidstory
+-	campaigns\liberty.sc2campaign -> libertycampaign
+-	campaigns\libertystory.sc2campaign -> libertystory
+-	campaigns\swarm.sc2campaign -> swarmcampaign
+-	campaigns\swarmstory.sc2campaign -> swarmstory
+-	campaigns\void.sc2campaign -> voidcampaign
+-	campaigns\voidstory.sc2campaign -> voidstory
 
-mods\alliedcommanders.sc2mod -> alliedcommanders
-mods\core.sc2mod -> core
-mods\liberty.sc2mod -> liberty
-mods\libertymulti.sc2mod -> libertymulti
-mods\missionpacks\ -> novacampaign
-mods\novastoryassets.sc2mod -> novastoryassets
-mods\swarm.sc2mod -> swarm
-mods\swarmmulti.sc2mod -> swarmmulti
-mods\void.sc2mod -> void
-mods\voidmulti.sc2mod -> voidmulti
-mods\voidprologue.sc2mod -> voidprologue
-mods\challenges.sc2mod -> challenges
-mods\war3.sc2mod -> war3
-mods\war3data.sc2mod -> war3data
-mods\novabasic03.sc2mod -> novabasic03
-mods\balancemulti.sc2mod -> balancemulti
-mods\campaigncommon.sc2mod -> campaigncommon
+-	mods\alliedcommanders.sc2mod -> alliedcommanders
+-	mods\core.sc2mod -> core
+-	mods\liberty.sc2mod -> liberty
+-	mods\libertymulti.sc2mod -> libertymulti
+-	mods\missionpacks\ -> novacampaign
+-	mods\novastoryassets.sc2mod -> novastoryassets
+-	mods\swarm.sc2mod -> swarm
+-	mods\swarmmulti.sc2mod -> swarmmulti
+-	mods\void.sc2mod -> void
+-	mods\voidmulti.sc2mod -> voidmulti
+-	mods\voidprologue.sc2mod -> voidprologue
+-	mods\challenges.sc2mod -> challenges
+-	mods\war3.sc2mod -> war3
+-	mods\war3data.sc2mod -> war3data
+-	mods\novabasic03.sc2mod -> novabasic03
+-	mods\balancemulti.sc2mod -> balancemulti
+-	mods\campaigncommon.sc2mod -> campaigncommon
 
 To get the information from arcade maps and mods:
 Open the sc2 map editor. File -> Open...
@@ -65,7 +65,7 @@ Download and open the entry you want i.e. Left 2 Die
 Than File -> Save As... -> choose .SC2Map or .SC2Mod and save it.
 Open the saved file with the MPQ Editor http://zezula.net/en/mpq/download.html
 
-arcade Left 2 Die -> left2die
+-	arcade Left 2 Die -> left2die
 
 ##### Some loosely used terminology:
 **Button:** The squary things you can click on.  
