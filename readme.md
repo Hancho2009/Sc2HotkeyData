@@ -26,9 +26,9 @@ verify_hotkeydata.py	: Prints out inconsistentcies in what the same ability is b
 A work in progress
 
 With the Casc Viewer from http://www.zezula.net/en/casc/main.html  
-You can open the SC2Data folder located at your Starcraft 2 install location i.e.: 
-CascView.exe "C:\Program Files (x86)\StarCraft II\SC2Data"
-from campaigns and mods folder comes the files from the data folder.
+You can open the SC2Data folder located at your Starcraft 2 install location i.e.: commandline 
+CascView.exe "C:\Program Files (x86)\StarCraft II\SC2Data" 
+From the campaigns and mods folders comes the files for the Sc2HotkeyData\data folder.
 
 ButtonData.xml and UnitData.xml are from the base.sc2data\GameData folders.
 GameHotkeys.txt are from the enus.sc2data\LocalizedData folders.
@@ -58,12 +58,12 @@ GameHotkeys.txt are from the enus.sc2data\LocalizedData folders.
 -	mods\balancemulti.sc2mod -> balancemulti
 -	mods\campaigncommon.sc2mod -> campaigncommon
 
-To get the information from arcade maps and mods:
-Open the sc2 map editor. File -> Open...
+To get the information from arcade maps and mods open the sc2 map editor. File -> Open...
 On the "Open Dcoument" Dialog go to the Tab Blizzard.
 Download and open the entry you want i.e. Left 2 Die
-Than File -> Save As... -> choose .SC2Map or .SC2Mod and save it.
+Than click on File -> Save As... in the menu and choose .SC2Map or .SC2Mod and save it.
 Open the saved file with the MPQ Editor http://zezula.net/en/mpq/download.html
+Execute the MPQEditor.exe and click on open MPQ(s) and choose the file you saved with the map editor.
 
 -	arcade Left 2 Die -> left2die
 
