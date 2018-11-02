@@ -1,4 +1,4 @@
-Button/Hotkey/330mmBarrageCannons=C
+﻿Button/Hotkey/330mmBarrageCannons=C
 Button/Hotkey/330mmBarrageCannons_NRS=I
 Button/Hotkey/330mmBarrageCannons_USD=C
 Button/Hotkey/330mmBarrageCannons_USDL=I
@@ -168,6 +168,7 @@ Button/Hotkey/Heal=E
 Button/Hotkey/Heal_USD=E
 Button/Hotkey/Heal_USDL=E
 Button/Hotkey/Hellion_SC1=H
+Button/Hotkey/HerculesLand=N
 Button/Hotkey/HerculesLoad=L
 Button/Hotkey/HerculesLoad_USD=L
 Button/Hotkey/HerculesLoad_USDL=L

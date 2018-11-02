@@ -1,5 +1,206 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Catalog>
+    <!--                                                                                         -->
+    <!--                                                                                         -->
+    <!-- Added For Wizards ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!--                                                                                         -->
+    <!--                                                                                         -->
+    <CButton default="1" id="WizButton">
+        <Icon value="##art##"/>
+        <AlertIcon value="##art##"/>
+    </CButton>
+    <CButton id="AnionPulseCrystals">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-phoenixrange.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-phoenixrange.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="CommanderNovaBaseTrait">
+        <Icon value="Assets\Textures\nova coop_lvl 01_black ops.dds"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockBombingRun">
+        <Icon value="Assets\Textures\nova coop_lvl 02_unlock bombing run.dds"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockEquipmentChange">
+        <Icon value="Assets\Textures\nova coop_lvl 03_mode swapping unlock.dds"/>
+        <Placeholder value="1"/>
+    </CButton>
+    <CButton id="CommanderNovaBarracksTechLabUpgradesPack">
+        <Icon value="Assets\Textures\nova coop_lvl 04_barracks tech lab_marine-marauder.dds"/>
+        <Placeholder value="1"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockGriffinTransport">
+        <Icon value="Assets\Textures\nova coop_lvl 05_unlock griffin transport.dds"/>
+    </CButton>
+    <CButton id="CommanderNovaFactoryTechLabUpgradesPack">
+        <Icon value="Assets\Textures\nova coop_lvl 06_factorytech lab.dds"/>
+        <Placeholder value="1"/>
+    </CButton>
+    <CButton id="CommanderNovaAutoRefineries">
+        <Icon value="Assets\Textures\nova coop_ lvl 7_autorefineries.dds"/>
+        <Placeholder value="1"/>
+    </CButton>
+    <CButton id="CommanderNovaTechLabandGhostAcademyUpgradesPack">
+        <Icon value="Assets\Textures\nova coop_lvl 08_ghost academy and texhlab_nova-ghost.dds"/>
+        <Placeholder value="1"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockNukeandHoloDecoy">
+        <Icon value="Assets\Textures\nova coop_lvl 09_ultimate nuke-holo decoy.dds"/>
+        <Placeholder value="1"/>
+    </CButton>
+    <CButton id="CommanderNovaBansheeLiberatorStarportTechLabUpgradesPack">
+        <Icon value="Assets\Textures\nova coop_lvl 10 starport tech lab_banshee-liberator.dds"/>
+        <Placeholder value="1"/>
+    </CButton>
+    <CButton id="CommanderNovaResearchCostandTimeReduction">
+        <Icon value="Assets\Textures\nova coop_lvl 11_all research costs and times50.dds"/>
+        <Placeholder value="1"/>
+    </CButton>
+    <CButton id="CommanderNovaRavenStarportTechLabUpgradesPack">
+        <Icon value="Assets\Textures\nova coop_lvl 12_raven upgrades.dds"/>
+        <Placeholder value="1"/>
+    </CButton>
+    <CButton id="CommanderNovaDefensiveMatrixDroneCharges">
+        <Icon value="Assets\Textures\nova coop_lvl 15_top bar ability buffs dmatrix drone +2 charges.dds"/>
+        <Placeholder value="1"/>
+    </CButton>
+    <CButton id="CommanderNovaGhostAcademyUpgradesPack2">
+        <Icon value="Assets\Textures\nova coop_lvl 14_ghost academy upgrade cache 2.dds"/>
+        <Placeholder value="1"/>
+    </CButton>
+    <CButton id="CommanderNovaKitSwapCooldownandEnergy">
+        <Icon value="Assets\Textures\nova coop_lvl 13_stance dance_kit swap - 10 sec cd and gives full energy.dds"/>
+        <Placeholder value="1"/>
+    </CButton>
+    <CButton id="CommanderNovaHealthRegen">
+        <Icon value="Assets\Textures\btn-missing-kaeo.dds"/>
+        <Placeholder value="1"/>
+    </CButton>
+    <CButton id="CommanderNovaImprovedGlobalPowers">
+        <Icon value="Assets\Textures\nova coop_lvl 15_top bar ability buffs dmatrix drone +2 charges.dds"/>
+        <Placeholder value="1"/>
+    </CButton>
+    <CButton id="CommanderTraitNovaStealthMode">
+        <Icon value="Assets\Textures\btn-upgrade-nova-tacticalstealthsuit.dds"/>
+    </CButton>
+    <CButton id="CommanderTraitNovaDefensiveDrone">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-defensivedrone.dds"/>
+    </CButton>
+    <CButton id="CommanderTraitNovaInstantRegeneration">
+        <Icon value="Assets\Textures\btn-upgrade-nova-novarespawn.dds"/>
+    </CButton>
+    <CButton id="CommanderStukovAutoCreep">
+        <Icon value="Assets\Textures\btn-ability-stukov-infestedcivilianstructurelv1.dds"/>
+    </CButton>
+    <CButton id="CommanderStukovImprovedInfestStructure">
+        <Icon value="Assets\Textures\btn-ability-zerg-stukov-infeststructureupgrade.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-stukov-infeststructureupgrade.dds"/>
+    </CButton>
+    <CButton id="CommanderStukovExtraInfestedCivilians">
+        <Icon value="Assets\Textures\btn-ability-stukov-infestedcivilianstructure_lv3.dds"/>
+    </CButton>
+    <CButton id="CommanderStukovApocalisk">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-stukov-apocolisk_04.dds"/>
+    </CButton>
+    <CButton id="CommanderStukovAleksander">
+        <Icon value="Assets\Textures\btn-ability-zerg-stukov-summonaleksander.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-stukov-summonaleksander.dds"/>
+    </CButton>
+    <CButton id="CommanderStukovBunkerResearch">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-stukov-bunkerresearchbundle_05.dds"/>
+    </CButton>
+    <CButton id="CommanderStukovImprovedMarineSpawning">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-stukov-infestedbarracksupgrade.dds"/>
+    </CButton>
+    <CButton id="CommanderStukovInfestedCivilianResearch">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-stukov-unlockresearchbundle_infestedcivilianmarines_07.dds"/>
+    </CButton>
+    <CButton id="CommanderStukovQueenClassic">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-stukov-classicqueen_20.dds"/>
+    </CButton>
+    <CButton id="CommanderStukovInfestedFactoryResearchPack">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-stukov-infestedfactoryresearchbundle_09.dds"/>
+    </CButton>
+    <CButton id="CommanderStukovApocaliskUpgraded">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-stukov-apocoliskupgraded_12.dds"/>
+    </CButton>
+    <CButton id="CommanderStukovInfestedStarportResearchPack">
+        <Icon value="Assets\Textures\Progression_icon_11_infested_starport.dds"/>
+    </CButton>
+    <CButton id="CommanderStukovAleksanderMindControl">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-stukov- buffed version aleksander_15.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zerg-stukov- buffed version aleksander_15.dds"/>
+    </CButton>
+    <CButton id="CommanderStukovQueenClassicUpgradeCache">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-stukov-flyingqueenunlocksmoreupgrades_13.dds"/>
+    </CButton>
+    <CButton id="CommanderStukovBunkerBonuses">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-stukov-bunkerupgradeii_14.dds"/>
+    </CButton>
+    <CButton id="CommanderTraitStukovInfestedHorde">
+        <Icon value="Assets\Textures\btn-unit-zerg-infestedmarine.dds"/>
+    </CButton>
+    <CButton id="CommanderTraitStukovInfestedColonistCompound">
+        <Icon value="Assets\Textures\btn-unit-zerg-infestedcolonist.dds"/>
+    </CButton>
+    <CButton id="CommanderTraitStukovPsiEmitter">
+        <Icon value="Assets\Textures\btn-ability-zerg-stukov-summonpsiemitter.dds"/>
+    </CButton>
+    <CButton id="CommanderTraitStukovInfestStructure">
+        <Icon value="Assets\Textures\btn-ability-zerg-stukov-infeststructure.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-stukov-infeststructure.dds"/>
+    </CButton>
+    <CButton id="CommanderTraitDehakaConsume">
+        <Icon value="Assets\Textures\btn-ability-zerg-dehaka-consume.dds"/>
+    </CButton>
+    <CButton id="CommanderTraitDehakaPrimalCombat">
+        <Icon value="Assets\Textures\btn-progression-zerg-dehaka-15-genemutation.dds"/>
+    </CButton>
+    <CButton id="CommanderTraitDehakaPrimalPackLeaders">
+        <Icon value="Assets\Textures\btn-progression-zerg-dehaka-10-primalbossupgrades.dds"/>
+    </CButton>
+    <CButton id="CommanderTraitHornerCallFleet">
+        <Icon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+    </CButton>
+    <CButton id="CommanderTraitHornerSalvage">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-salvagebonus.dds"/>
+    </CButton>
+    <CButton id="CommanderTraitHornerSpaceStation">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-10-telefrag.dds"/>
+    </CButton>
+    <CButton id="DisableBuildingAttack">
+        <Icon value="Assets\Textures\btn-ability-zerg-explode-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-explode-color.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CButton id="EnableBuildingAttack">
+        <Icon value="Assets\Textures\btn-ability-zerg-attackstructure-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-attackstructure-color.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CButton id="GhostAlternate">
+        <Icon value="Assets\Textures\btn-unit-terran-ghost.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-ghost.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="Ghost"/>
+    </CButton>
+    <CButton id="MasteryAbathurDoubleBiomass"/>
+    <CButton id="MasteryAbathurSymbioteCDR"/>
+    <CButton id="MasteryDehakaConsumeHealing">
+        <HotkeyAlias value="MasteryDehakaDoubleHealEssence"/>
+    </CButton>
+    <CButton id="MasteryNovaPrimaryAbilityImprovement"/>
+    <!--                                                                                         -->
+    <!--                                                                                         -->
+    <!-- Defaults ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!--                                                                                         -->
+    <!--                                                                                         -->
+    <CButton id="Spray">
+        <Icon value="Assets\Textures\btn-command-spray.dds"/>
+        <AlertIcon value="Assets\Textures\btn-command-spray.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+        <TintRacially value="1"/>
+    </CButton>
     <CButton id="ArchonWarpTarget">
         <Icon value="Assets\Textures\btn-unit-protoss-archon.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-archon.dds"/>
@@ -86,6 +287,10 @@
     <CButton id="CommanderArtanisImprovedSolarBombardment">
         <Icon value="Assets\Textures\Btn-ability-spearofadun-solarbombardment.dds"/>
     </CButton>
+    <CButton id="CommanderRaynorArmorVanadiumPH">
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryarmorlevel3.dds"/>
+        <Placeholder value="1"/>
+    </CButton>
     <CButton id="CommanderRaynorUnlockBattlecruiser">
         <Icon value="Assets\Textures\Talent-Raynor-Level06-UnlockBattlecruiser.dds"/>
     </CButton>
@@ -129,6 +334,9 @@
     <CButton id="CommanderVorazunShadowStalk">
         <Icon value="Assets\Textures\Talent-Vorazun-Level01-ShadowStalk.dds"/>
     </CButton>
+    <CButton id="CommanderArtanisSwiftRetribution">
+        <Icon value="Assets\Textures\Talent-Artanis-Level01-SwiftRetribution.dds"/>
+    </CButton>
     <CButton id="CommanderArtanisUnlockTempest">
         <Icon value="Assets\Textures\Talent-Artanis-Level11-UnlockTempest.dds"/>
     </CButton>
@@ -167,6 +375,51 @@
     <CButton id="CommanderArtanisTwilightCouncilUpgradesPack">
         <Icon value="Assets\Textures\Talent-Artanis-Level04-TwilightCouncilResearchBundle.dds"/>
     </CButton>
+    <CButton id="CommanderAlarakStrongestSurvive">
+        <Icon value="Assets\Textures\btn-ability-protoss-soulabsorbtion.dds"/>
+    </CButton>
+    <CButton id="CommanderAlarakImprovedDeadlyCharge">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-dashrange&amp;cdr.dds"/>
+    </CButton>
+    <CButton id="CommanderAlarakImprovedStructureOvercharge">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-structureovercharge.dds"/>
+    </CButton>
+    <CButton id="CommanderAlarakTwilightCouncilUpgradesPack">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-twilightcouncil.dds"/>
+    </CButton>
+    <CButton id="CommanderAlarakEmpowerMeSlaves">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-empowermeslaves.dds"/>
+    </CButton>
+    <CButton id="CommanderAlarakRoboticsBayUpgradesPack">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-roboticssupportbay.dds"/>
+    </CButton>
+    <CButton id="CommanderAlarakLightningStrikes">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-Alarak-SupplicantSacrifice-LightingStrike.dds"/>
+    </CButton>
+    <CButton id="CommanderAlarakUnlockAscendant">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-unlockascendant.dds"/>
+    </CButton>
+    <CButton id="CommanderAlarakHavocUpgradesPack">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-havoctargetlockbuffed.dds"/>
+    </CButton>
+    <CButton id="CommanderAlarakUnlockDeathFleet">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-deathfleet.dds"/>
+    </CButton>
+    <CButton id="CommanderAlarakTemplarArchivesUpgradesPack">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-templararchives.dds"/>
+    </CButton>
+    <CButton id="CommanderAlarakImprovedDeathFleet">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-improveddeathfleet.dds"/>
+    </CButton>
+    <CButton id="CommanderAlarakSupplicantSacrificeCDR">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-Alarak-SupplicantSacrifice-CoolDown.dds"/>
+    </CButton>
+    <CButton id="CommanderAlarakEmpoweredAOEAttacks">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-empoweraoeattacks.dds"/>
+    </CButton>
+    <CButton id="CommanderAlarakForgeAlarakUpgrades">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-forgeresearch.dds"/>
+    </CButton>
     <CButton id="CommanderKerriganCrushingGripWave">
         <Icon value="Assets\Textures\btn-upgrade-kerrigan-crushinggripwave.dds"/>
     </CButton>
@@ -196,9 +449,6 @@
     </CButton>
     <CButton id="CommanderZagaraMasterSpawner">
         <Icon value="Assets\Textures\Talent-Zagara-Level15-MasterSpawner.dds"/>
-    </CButton>
-    <CButton id="CommanderArtanisSwiftRetribution">
-        <Icon value="Assets\Textures\Talent-Artanis-Level01-SwiftRetribution.dds"/>
     </CButton>
     <CButton id="CommanderZagaraZerglingEvolutionSwarmling">
         <Icon value="Assets\Textures\Talent-Zagara-Level12-UnlockSwarmling.dds"/>
@@ -325,7 +575,7 @@
         <Icon value="Assets\Textures\Talent-Raynor-Level03-FirebatMedicRange.dds"/>
     </CButton>
     <CButton id="CommanderRaynorEngineeringBayUpgradePack">
-        <Icon value="Assets\Textures\Talent-Raynor-Level07-EngineeringBayResearchBundle.dds"/>
+        <Icon value="Assets\Textures\btn-research-zerg-shriketurret.dds"/>
     </CButton>
     <CButton id="CommanderRaynorInfantryUpgradePack">
         <Icon value="Assets\Textures\Talent-Raynor-Level04-BarracksResearchBundle.dds"/>
@@ -407,6 +657,111 @@
     </CButton>
     <CButton id="CommanderAbathurBiomassLifesteal">
         <Icon value="Assets\Textures\bioticleech_coop.dds"/>
+    </CButton>
+    <CButton id="CommanderFenixBaseTrait">
+        <Icon value="Assets\Textures\btn-progression-protoss-fenix-1-zealotsuit.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-protoss-fenix-1-zealotsuit.dds"/>
+    </CButton>
+    <CButton id="CommanderFenixUnlockPurifierConclave">
+        <Icon value="Assets\Textures\btn-progression-protoss-fenix-2-purifierconclave.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-protoss-fenix-2-purifierconclave.dds"/>
+    </CButton>
+    <CButton id="CommanderFenixUnlockArbiterSuit">
+        <Icon value="Assets\Textures\btn-progression-protoss-fenix-3-arbitersuit.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-protoss-fenix-3-arbitersuit.dds"/>
+    </CButton>
+    <CButton id="CommanderFenixSuitUpgrades">
+        <Icon value="Assets\Textures\btn-progression-protoss-fenix-6-forgeresearch.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-protoss-fenix-6-forgeresearch.dds"/>
+    </CButton>
+    <CButton id="CommanderFenixUnlockPurifierAI1">
+        <Icon value="Assets\Textures\btn-progression-protoss-fenix-5-immortalandscoutchampions.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-protoss-fenix-5-immortalandscoutchampions.dds"/>
+    </CButton>
+    <CButton id="CommanderFenixPurifierConclaveResearchPack1">
+        <Icon value="Assets\Textures\btn-progression-protoss-fenix-4-twilightcouncilresearch.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-protoss-fenix-4-twilightcouncilresearch.dds"/>
+    </CButton>
+    <CButton id="CommanderFenixUnlockPurifierAI2">
+        <Icon value="Assets\Textures\btn-progression-protoss-fenix-8-colossusandcarrierchampions.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-protoss-fenix-8-colossusandcarrierchampions.dds"/>
+    </CButton>
+    <CButton id="CommanderFenixUnlockDisruptor">
+        <Icon value="Assets\Textures\btn-progression-protoss-fenix-7-disruptor.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-protoss-fenix-7-disruptor.dds"/>
+    </CButton>
+    <CButton id="CommanderFenixPurifierConclaveResearchPack2">
+        <Icon value="Assets\Textures\btn-progression-protoss-fenix-12-immortalandscoutchampions-research.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-protoss-fenix-12-immortalandscoutchampions-research.dds"/>
+    </CButton>
+    <CButton id="CommanderFenixNoTechNoGas">
+        <Icon value="Assets\Textures\btn-progression-protoss-fenix-10-acceleratedtech.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-protoss-fenix-10-acceleratedtech.dds"/>
+    </CButton>
+    <CButton id="CommanderFenixChampionTransferBuff">
+        <Icon value="Assets\Textures\btn-progression-protoss-fenix-11-championtransferbuff.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-protoss-fenix-11-championtransferbuff.dds"/>
+    </CButton>
+    <CButton id="CommanderFenixDisruptorSentryResearchPack">
+        <Icon value="Assets\Textures\btn-progression-protoss-fenix-9-disruptorandsentrychampionsresearch.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-protoss-fenix-9-disruptorandsentrychampionsresearch.dds"/>
+    </CButton>
+    <CButton id="CommanderFenixNetworkedSuperiority">
+        <Icon value="Assets\Textures\btn-progression-protoss-fenix-15-networksuperiority.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-protoss-fenix-15-networksuperiority.dds"/>
+    </CButton>
+    <CButton id="CommanderFenixPurifierConclaveResearchPack3">
+        <Icon value="Assets\Textures\btn-progression-protoss-fenix-14-colossusandcarrierchampionsresearch.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-protoss-fenix-14-colossusandcarrierchampionsresearch.dds"/>
+    </CButton>
+    <CButton id="CommanderFenixOfflineSuitRegen">
+        <Icon value="Assets\Textures\btn-progression-protoss-fenix-13-offlinesuitregen.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-protoss-fenix-13-offlinesuitregen.dds"/>
+    </CButton>
+    <CButton id="CommanderTychusLevel01">
+        <Icon value="Assets\Textures\talent-tychus-level01-squadbar.dds"/>
+    </CButton>
+    <CButton id="CommanderTychusLevel02">
+        <Icon value="Assets\Textures\talent-tychus-level02-additionaloutlaw.dds"/>
+    </CButton>
+    <CButton id="CommanderTychusLevel03">
+        <Icon value="Assets\Textures\talent-tychus-level03-odin.dds"/>
+    </CButton>
+    <CButton id="CommanderTychusLevel04">
+        <Icon value="Assets\Textures\talent-tychus-level04-marauder.dds"/>
+    </CButton>
+    <CButton id="CommanderTychusLevel05">
+        <Icon value="Assets\Textures\talent-tychus-level05-engineeringbaycache.dds"/>
+    </CButton>
+    <CButton id="CommanderTychusLevel06">
+        <Icon value="Assets\Textures\talent-tychus-level06-warhound.dds"/>
+    </CButton>
+    <CButton id="CommanderTychusLevel07">
+        <Icon value="Assets\Textures\talent-tychus-level07-firstdiscount.dds"/>
+    </CButton>
+    <CButton id="CommanderTychusLevel08">
+        <Icon value="Assets\Textures\talent-tychus-level08-herc.dds"/>
+    </CButton>
+    <CButton id="CommanderTychusLevel09">
+        <Icon value="Assets\Textures\talent-tychus-level09-additionalmedivacs.dds"/>
+    </CButton>
+    <CButton id="CommanderTychusLevel10">
+        <Icon value="Assets\Textures\talent-tychus-level10-ghost.dds"/>
+    </CButton>
+    <CButton id="CommanderTychusLevel11">
+        <Icon value="Assets\Textures\talent-tychus-level11-geardiscount.dds"/>
+    </CButton>
+    <CButton id="CommanderTychusLevel12">
+        <Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
+    </CButton>
+    <CButton id="CommanderTychusLevel13">
+        <Icon value="Assets\Textures\talent-tychus-level13-additionalupgrades.dds"/>
+    </CButton>
+    <CButton id="CommanderTychusLevel14">
+        <Icon value="Assets\Textures\talent-tychus-level14-ultimategear2.dds"/>
+    </CButton>
+    <CButton id="CommanderTychusLevel15">
+        <Icon value="Assets\Textures\talent-tychus-level15-odinnuke.dds"/>
     </CButton>
     <CButton id="EvolveAnabolicSynthesis2">
         <Icon value="Assets\Textures\btn-upgrade-zerg-anabolicsynthesis.dds"/>
@@ -1764,8 +2119,8 @@
         <EditorCategories value="Race:Zerg"/>
     </CButton>
     <CButton id="Larva">
-        <Icon value="Assets\Textures\btn-unit-zerg-larva.dds"/>
-        <AlertIcon value="Assets\Textures\btn-unit-zerg-larva.dds"/>
+        <Icon value="Assets\Textures\btn-unit-zerg-larvaex3.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-zerg-larvaex3.dds"/>
         <EditorCategories value="Race:Zerg"/>
         <Universal value="1"/>
     </CButton>
@@ -2000,6 +2355,18 @@
         <Icon value="Assets\Textures\btn-unit-zerg-overseer.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-zerg-overseer.dds"/>
         <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CButton id="MorphtoOverseerSiege">
+        <Icon value="Assets\Textures\btn-ability-zerg-overlord-oversight.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-overlord-oversight.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+        <HotkeySet value="OverseerModes"/>
+    </CButton>
+    <CButton id="MorphtoOverseerNormal">
+        <Icon value="Assets\Textures\btn-ability-zerg-overlord-oversight-off.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-overlord-oversight-off.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+        <HotkeySet value="OverseerModes"/>
     </CButton>
     <CButton id="EvolveGlialRegeneration">
         <Icon value="Assets\Textures\btn-upgrade-zerg-glialreconstitution.dds"/>
@@ -2271,6 +2638,26 @@
         <AlertIcon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
+    <CButton id="EvolveFlyingLocusts">
+        <Icon value="Assets\Textures\btn-unit-zerg-locustflyer.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-zerg-locustflyer.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CButton id="FlyingLocusts">
+        <Icon value="Assets\Textures\btn-unit-zerg-locustflyer.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-zerg-locustflyer.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CButton id="LocustMPFlyingSwoop">
+        <Icon value="Assets\Textures\btn-ability-neutral-ursadonleap.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-ursadonleap.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CButton id="VoidSwarmHostSpawnLocust">
+        <Icon value="Assets\Textures\btn-unit-zerg-locust.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-zerg-locust.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
     <CButton id="Contaminate">
         <Icon value="Assets\Textures\btn-ability-zerg-contaminate-color.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-zerg-contaminate-color.dds"/>
@@ -2441,6 +2828,24 @@
     <CButton id="CommanderTraitVorazunSOASummonShadowGuard">
         <Icon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
     </CButton>
+    <CButton id="CommanderTraitFenixPraetorArmorSuit">
+        <Icon value="Assets\Textures\btn-unit-protoss-fenix.dds"/>
+    </CButton>
+    <CButton id="CommanderTraitFenixSolariteDragoonSuit">
+        <Icon value="Assets\Textures\btn-unit-protoss-dragoon-purifier.dds"/>
+    </CButton>
+    <CButton id="CommanderTraitFenixChampionAI">
+        <Icon value="Assets\Textures\btn-progression-protoss-fenix-2-purifierconclave.dds"/>
+    </CButton>
+    <CButton id="CommanderTraitAlarakDeadlyCharge">
+        <Icon value="Assets\Textures\btn-ability-protoss-deadlycharge.dds"/>
+    </CButton>
+    <CButton id="CommanderTraitAlarakDestructionWave">
+        <Icon value="Assets\Textures\btn-ability-protoss-destructionwave.dds"/>
+    </CButton>
+    <CButton id="CommanderTraitAlarakStructureOvercharge">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-structureovercharge.dds"/>
+    </CButton>
     <CButton id="CommanderTraitKaraxSOAOrbitalStrike">
         <Icon value="Assets\Textures\btn-ability-spearofadun-orbitalstrike.dds"/>
     </CButton>
@@ -2449,6 +2854,15 @@
     </CButton>
     <CButton id="CommanderTraitKaraxSOAChronoWave">
         <Icon value="Assets\Textures\btn-upgrade-karax-chronowave.dds"/>
+    </CButton>
+    <CButton id="CommanderTraitTychusOdin">
+        <Icon value="Assets\Textures\talent-tychus-level03-odin.dds"/>
+    </CButton>
+    <CButton id="CommanderTraitTychusOutlawRecruitment">
+        <Icon value="Assets\Textures\talent-tychus-level01-squadbar.dds"/>
+    </CButton>
+    <CButton id="CommanderTraitTychusShredderGrenade">
+        <Icon value="Assets/Textures/btn-ability-tychus-tychus-shreddergrenade.dds"/>
     </CButton>
     <CButton id="CommanderKaraxOrbitalAssault">
         <Icon value="Assets\Textures\btn-upgrade-karax-orbitalassault.dds"/>
@@ -2498,12 +2912,117 @@
     <CButton id="CommanderKaraxInstantStructureWarp">
         <Icon value="Assets\Textures\btn-upgrade-karax-pylonwarpininstantly.dds"/>
     </CButton>
+    <CButton id="CommanderDehakaBaseTrait">
+        <Icon value="Assets\Textures\btn-progression-zerg-dehaka-1-dehakaunlock.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-zerg-dehaka-1-dehakaunlock.dds"/>
+    </CButton>
+    <CButton id="CommanderDehakaLevel02">
+        <Icon value="Assets\Textures\btn-progression-zerg-dehaka-ravasaurprimaligniterunlock.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-zerg-dehaka-creeperhostimpalerunlock.dds"/>
+    </CButton>
+    <CButton id="CommanderDehakaLevel03">
+        <Icon value="Assets\Textures\btn-progression-zerg-dehaka-3-ravasaurupgradepack.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-zerg-dehaka-3-ravasaurupgradepack.dds"/>
+    </CButton>
+    <CButton id="CommanderDehakaLevel04">
+        <Icon value="Assets\Textures\btn-ability-zerg-dehaka-deeptunnelunlocked.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-dehaka-deeptunnelunlocked.dds"/>
+    </CButton>
+    <CButton id="CommanderDehakaLevel05">
+        <Icon value="Assets\Textures\btn-progression-zerg-dehaka-7-newdehakaabilities.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-zerg-dehaka-7-newdehakaabilities.dds"/>
+    </CButton>
+    <CButton id="CommanderDehakaLevel06">
+        <Icon value="Assets\Textures\btn-progression-zerg-dehaka-6-mutaliskguardianupgradepack.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-zerg-dehaka-6-mutaliskguardianupgradepack.dds"/>
+    </CButton>
+    <CButton id="CommanderDehakaLevel07">
+        <Icon value="Assets\Textures\btn-progression-zerg-dehaka-5-mutaliskguardianunlock.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-zerg-dehaka-5-mutaliskguardianunlock.dds"/>
+    </CButton>
+    <CButton id="CommanderDehakaLevel08">
+        <Icon value="Assets\Textures\btn-progression-zerg-dehaka-creeperhostimpalerunlock.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-zerg-dehaka-creeperhostimpalerunlock.dds"/>
+    </CButton>
+    <CButton id="CommanderDehakaLevel09">
+        <Icon value="Assets\Textures\btn-progression-zerg-dehaka-4-fireroachimpalerunlock.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-zerg-dehaka-4-fireroachimpalerunlock.dds"/>
+    </CButton>
+    <CButton id="CommanderDehakaLevel10">
+        <Icon value="Assets\Textures\btn-progression-zerg-dehaka-10-primalbossupgrades.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-zerg-dehaka-10-primalbossupgrades.dds"/>
+    </CButton>
+    <CButton id="CommanderDehakaLevel11">
+        <Icon value="Assets\Textures\btn-progression-zerg-dehaka-11-tyrannosaurunlock.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-zerg-dehaka-11-tyrannosaurunlock.dds"/>
+    </CButton>
+    <CButton id="CommanderDehakaLevel12">
+        <Icon value="Assets\Textures\btn-progression-zerg-dehaka-12-newdehakaabilities.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-zerg-dehaka-12-newdehakaabilities.dds"/>
+    </CButton>
+    <CButton id="CommanderDehakaLevel13">
+        <Icon value="Assets\Textures\btn-progression-zerg-dehaka-13-tyrannosaurcreeperhostupgradepack.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-zerg-dehaka-13-tyrannosaurcreeperhostupgradepack.dds"/>
+    </CButton>
+    <CButton id="CommanderDehakaLevel14">
+        <Icon value="Assets\Textures\btn-progression-zerg-dehaka-14-plus1skillpoint.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-zerg-dehaka-14-plus1skillpoint.dds"/>
+    </CButton>
+    <CButton id="CommanderDehakaLevel15">
+        <Icon value="Assets\Textures\btn-progression-zerg-dehaka-15-genemutation.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-zerg-dehaka-15-genemutation.dds"/>
+    </CButton>
+    <CButton id="CommanderHornerLevel01">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-1-precisionchaos.dds"/>
+    </CButton>
+    <CButton id="CommanderHornerLevel02">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-2-bomberplatforms.dds"/>
+    </CButton>
+    <CButton id="CommanderHornerLevel03">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-3-starportraven.dds"/>
+    </CButton>
+    <CButton id="CommanderHornerLevel04">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-4-reaperwidowmineupgrades.dds"/>
+    </CButton>
+    <CButton id="CommanderHornerLevel05">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-5-fleetcalldown.dds"/>
+    </CButton>
+    <CButton id="CommanderHornerLevel06">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-6-mirabuildtime.dds"/>
+    </CButton>
+    <CButton id="CommanderHornerLevel07">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-7-wraithvikingupgrades.dds"/>
+    </CButton>
+    <CButton id="CommanderHornerLevel08">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-8-supplydepot.dds"/>
+    </CButton>
+    <CButton id="CommanderHornerLevel09">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-9-hellionhellbatupgrades.dds"/>
+    </CButton>
+    <CButton id="CommanderHornerLevel10">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-10-telefrag.dds"/>
+    </CButton>
+    <CButton id="CommanderHornerLevel11">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-11-mechhealing.dds"/>
+    </CButton>
+    <CButton id="CommanderHornerLevel12">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-12-yamatocannons.dds"/>
+    </CButton>
+    <CButton id="CommanderHornerLevel13">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-13-junkerfusioncore.dds"/>
+    </CButton>
+    <CButton id="CommanderHornerLevel14">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-14-nukefortelefrag.dds"/>
+    </CButton>
+    <CButton id="CommanderHornerLevel15">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-15-mysignificantother.dds"/>
+    </CButton>
     <CButton id="MasteryAbathurBiomassRefund"/>
     <CButton id="MasteryAbathurMendHeal"/>
     <CButton id="MasteryAbathurSymbioteCarapace"/>
     <CButton id="MasteryAbathurTechFastBuild"/>
     <CButton id="MasteryAbathurToxicNestCharge"/>
-    <CButton id="MasteryAbathurToxicNestRespawn"/>
+    <CButton id="MasteryAbathurToxicNestDamageAndRespawn"/>
     <CButton id="MasteryArtanisChronoBoost"/>
     <CButton id="MasteryArtanisGuardianShell"/>
     <CButton id="MasteryArtanisGuardianShellHeal"/>
@@ -2514,6 +3033,7 @@
     <CButton id="MasteryArtanisStartingAndMaxSoAEnergy"/>
     <CButton id="MasteryArtanisStartingResources"/>
     <CButton id="MasteryArtanisWarpChargeCooldown"/>
+    <CButton id="MasteryArtanisEnergyRegenCooldown"/>
     <CButton id="MasteryKaraxBuildingVital"/>
     <CButton id="MasteryKaraxChronoBoostSpeed"/>
     <CButton id="MasteryKaraxMaxEnergy"/>
@@ -2528,7 +3048,11 @@
     <CButton id="MasteryKerriganCocoonTimer"/>
     <CButton id="MasteryKerriganEnergyRegen"/>
     <CButton id="MasteryKerriganLarvaRate"/>
-    <CButton id="MasteryKerriganResearchSpeed"/>
+    <CButton id="MasteryKerriganResearchSpeedandCost"/>
+    <CButton id="MasteryKerriganInstantRevive"/>
+    <CButton id="MasteryKerriganImmobilizationDamage"/>
+    <CButton id="MasteryKerriganMutatingCarapaceLifeDegradation"/>
+    <CButton id="MasteryKerriganPrimarySpeedDamage"/>
     <CButton id="MasteryRaynorBuildingHealth"/>
     <CButton id="MasteryRaynorDropPodHaste"/>
     <CButton id="MasteryRaynorDuskWingCooldown"/>
@@ -2537,6 +3061,7 @@
     <CButton id="MasteryRaynorMechAttackSpeed"/>
     <CButton id="MasteryRaynorMedicSecondaryHeal"/>
     <CButton id="MasteryRaynorResearchSpeed"/>
+    <CButton id="MasteryRaynorResearchCost"/>
     <CButton id="MasteryRaynorStimDuration"/>
     <CButton id="MasterySwannBuildingHealth"/>
     <CButton id="MasterySwannCombatDrop"/>
@@ -2561,4 +3086,59 @@
     <CButton id="MasteryZagaraLarvaRate"/>
     <CButton id="MasteryZagaraResearchSpeed"/>
     <CButton id="MasteryZagaraRoachDropDamageAndHealth"/>
+    <CButton id="MasteryZagaraMassFrenzySpeedBoost"/>
+    <CButton id="MasteryZagaraZerglingDodgeChance"/>
+    <CButton id="MasteryAlarakAutoAttackDamage"/>
+    <CButton id="MasteryAlarakCocoonTimer"/>
+    <CButton id="MasteryAlarakDeathFleetCDR"/>
+    <CButton id="MasteryAlarakEmpowerMeSlavesDuration"/>
+    <CButton id="MasteryAlarakOverchargeShieldsDamage"/>
+    <CButton id="MasteryArtanisShieldOverchargeCDR"/>
+    <CButton id="MasteryAlarakUnitAttackSpeed"/>
+    <CButton id="MasteryAlarakChronoBoostSpeed"/>
+    <CButton id="MasteryNovaNukeAndHoloDecoyCooldown"/>
+    <CButton id="MasteryNovaOdinDuration"/>
+    <CButton id="MasteryNovaWeaponAttackSpeed"/>
+    <CButton id="MasteryNovaWeaponAttackDamage"/>
+    <CButton id="MasteryNovaReviveTimer"/>
+    <CButton id="MasteryNovaEnergyRegen"/>
+    <CButton id="MasteryNovaGriffinCooldown"/>
+    <CButton id="MasteryNovaDroneCooldown"/>
+    <CButton id="MasteryNovaArmyOOCRegenSpeed"/>
+    <CButton id="MasteryNovaArmyAttackSpeed"/>
+    <CButton id="MasteryStukovAleksanderCDR"/>
+    <CButton id="MasteryStukovApocaliskCDR"/>
+    <CButton id="MasteryStukovBroodlingSpawnRate"/>
+    <CButton id="MasteryStukovInfestStructureCDR"/>
+    <CButton id="MasteryStukovTimedLife"/>
+    <CButton id="MasteryStukovUnitMoveSpeed"/>
+    <CButton id="MasteryStukovUnitRegenSpeed"/>
+    <CButton id="MasteryStukovVolatileChance"/>
+    <CButton id="MasteryStukovMechAttackSpeed"/>
+    <CButton id="MasteryFenixSuitAttackSpeed"/>
+    <CButton id="MasteryFenixSuitEnergyRegen"/>
+    <CButton id="MasteryFenixChampionAttackSpeed"/>
+    <CButton id="MasteryFenixChampionLifeShieldBuff"/>
+    <CButton id="MasteryFenixChronoBoostExtra"/>
+    <CButton id="MasteryFenixExtraStartingSupply"/>
+    <CButton id="MasteryDehakaPrimalWurmCDR"/>
+    <CButton id="MasteryDehakaConsumeDuration"/>
+    <CButton id="MasteryDehakaBossTimedLife"/>
+    <CButton id="MasteryDehakaGeneMutation"/>
+    <CButton id="MasteryDehakaLevelUpLife"/>
+    <CButton id="MasteryDehakaAttackSpeed"/>
+    <CButton id="MasteryDehakaDoubleHealEssence"/>
+    <CButton id="MasteryHornerLPSHeal"/>
+    <CButton id="MasteryHornerBomberRadius"/>
+    <CButton id="MasteryHornerBetterDeathRattle"/>
+    <CButton id="MasteryHornerMSOBonus"/>
+    <CButton id="MasteryHornerDoubleSalvageChance"/>
+    <CButton id="MasteryHornerAirStrikeDistance"/>
+    <CButton id="MasteryHornerMagMineUpgrades"/>
+    <CButton id="MasteryTychusCommanderAttackSpeed"/>
+    <CButton id="MasteryTychusGrenadeCooldown"/>
+    <CButton id="MasteryTychusUpgradesIncrease"/>
+    <CButton id="MasteryTychusHeroCooldown"/>
+    <CButton id="MasteryTychusMedivacBuff"/>
+    <CButton id="MasteryTychusOdinCooldown"/>
 </Catalog>

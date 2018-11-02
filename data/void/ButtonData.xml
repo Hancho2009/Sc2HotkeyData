@@ -23,30 +23,18 @@
         <TintRacially value="1"/>
         <Universal value="1"/>
     </CButton>
-    <CButton id="EvolveFlyingLocusts">
-        <Icon value="Assets\Textures\btn-unit-zerg-locustflyer.dds"/>
-        <AlertIcon value="Assets\Textures\btn-unit-zerg-locustflyer.dds"/>
-        <EditorCategories value="Race:Zerg"/>
-    </CButton>
     <CButton id="FlyingLocusts">
-        <Icon value="Assets\Textures\btn-unit-zerg-locustflyer.dds"/>
-        <AlertIcon value="Assets\Textures\btn-unit-zerg-locustflyer.dds"/>
-        <EditorCategories value="Race:Zerg"/>
+        <Icon value="Assets\Textures\btn-unit-zerg-locustflyerex3.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-zerg-locustflyerex3.dds"/>
     </CButton>
     <CButton id="ImmortalOverload">
         <Icon value="Assets\Textures\btn-ability-protoss-invulnerabilityshield.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-invulnerabilityshield.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
-    <CButton id="LocustMPFlyingSwoop">
-        <Icon value="Assets\Textures\btn-ability-neutral-ursadonleap.dds"/>
-        <AlertIcon value="Assets\Textures\btn-ability-neutral-ursadonleap.dds"/>
-        <EditorCategories value="Race:Zerg"/>
-    </CButton>
-    <CButton id="LurkerMP"/>
     <CButton id="PermanentlyCloakedStasis">
-        <Icon value="Assets\Textures\BTN-ability-Protoss-permanentlycloaked-Observer-color.dds"/>
-        <AlertIcon value="Assets\Textures\BTN-ability-Protoss-permanentlycloaked-Observer-color.dds"/>
+        <Icon value="Assets\Textures\btn-upgrade-vorazun-stasiswardpermanentlycloaked.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-vorazun-stasiswardpermanentlycloaked.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="PermanentlyCloakedObserver"/>
     </CButton>
@@ -193,10 +181,12 @@
     <CButton id="OracleWeaponOff">
         <Icon value="Assets\Textures\BTN-Ability-Protoss-OraclePulsarCannonOff.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Ability-Protoss-OraclePulsarCannonOff.dds"/>
+        <HotkeySet value="PulsarBeam"/>
     </CButton>
     <CButton id="OracleWeaponOn">
         <Icon value="Assets\Textures\BTN-Ability-Protoss-OraclePulsarCannonOn.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Ability-Protoss-OraclePulsarCannonOn.dds"/>
+        <HotkeySet value="PulsarBeam"/>
     </CButton>
     <CButton id="Overcharge">
         <Icon value="Assets\Textures\btn-ability-protoss-arcshield.dds"/>
@@ -230,11 +220,6 @@
         <AlertIcon value="Assets\Textures\BTN-Ability-Protoss-VoidRayPrismaticAlignment.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
-    <CButton id="VoidSwarmHostSpawnLocust">
-        <Icon value="Assets\Textures\btn-unit-zerg-locust.dds"/>
-        <AlertIcon value="Assets\Textures\btn-unit-zerg-locust.dds"/>
-        <EditorCategories value="Race:Zerg"/>
-    </CButton>
     <CButton id="VortexKO">
         <Icon value="Assets\Textures\BTN-Ability-Protoss-Blackhole-color.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Ability-Protoss-Blackhole-color.dds"/>
@@ -244,7 +229,6 @@
         <Icon value="Assets\Textures\Btn-unit-protoss-disruptor.dds"/>
         <AlertIcon value="Assets\Textures\Btn-unit-protoss-disruptor.dds"/>
     </CButton>
-    <CButton id="WeaponsFree"/>
     <CButton id="TerranVehicleAndShipWeaponsLevel1">
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel1.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel1.dds"/>
@@ -382,12 +366,14 @@
         <AlertIcon value="Assets\Textures\btn-ability-terran-weaponsfree.dds"/>
         <EditorCategories value="Race:Zerg"/>
         <TintRacially value="1"/>
+        <HotkeySet value="LurkerHoldFire"/>
     </CButton>
     <CButton id="LurkerHoldFire">
         <Icon value="Assets\Textures\btn-ability-terran-holdfire.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-holdfire.dds"/>
         <EditorCategories value="Race:Zerg"/>
         <TintRacially value="1"/>
+        <HotkeySet value="LurkerHoldFire"/>
     </CButton>
     <CButton id="BansheeSpeed">
         <Icon value="Assets\Textures\btn-upgrade-terran-hyperflightrotors.dds"/>
@@ -459,11 +445,13 @@
         <Icon value="Assets\Textures\btn-ability-terran-liberator-agmode.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-liberator-agmode.dds"/>
         <EditorCategories value="Race:Terran"/>
+        <HotkeySet value="LiberatorModes"/>
     </CButton>
     <CButton id="LiberatorAAMode">
         <Icon value="Assets\Textures\btn-ability-terran-liberator-aamode.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-liberator-aamode.dds"/>
         <EditorCategories value="Race:Terran"/>
+        <HotkeySet value="LiberatorModes"/>
     </CButton>
     <CButton id="ResearchLiberatorAGMode">
         <Icon value="Assets\Textures\btn-upgrade-terran-liberator-agmode.dds"/>

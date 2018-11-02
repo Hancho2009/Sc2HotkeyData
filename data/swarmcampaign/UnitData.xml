@@ -15421,7 +15421,7 @@
     </CUnit>
     <CUnit id="Omegalisk">
         <AbilArray Link="OmegaliskCorpse"/>
-        <BehaviorArray Link="OmegaliskDontDie"/>
+        <!--BehaviorArray Link="OmegaliskDontDie"/-->
         <BehaviorArray Link="Frenzy"/>
         <BehaviorArray Link="NoxiousFumes"/>
         <CardLayouts index="0">
@@ -15456,7 +15456,6 @@
         <AbilArray index="4" removed="1"/>
         <BehaviorArray index="0" removed="1"/>
         <BehaviorArray index="1" removed="1"/>
-        <BehaviorArray index="2" removed="1"/>
         <WeaponArray index="0" removed="1"/>
         <WeaponArray index="1" removed="1"/>
         <CardLayouts index="0">
@@ -17892,22 +17891,7 @@
         <FogVisibility value="Dimmed"/>
     </CUnit>
     <!-- Multiplayer overrides -->
-    <CUnit id="SiegeTank">
-        <GlossaryStrongArray value="Marine"/>
-        <GlossaryStrongArray value="Hydralisk"/>
-        <GlossaryStrongArray value="Stalker"/>
-        <GlossaryWeakArray value="Banshee"/>
-        <GlossaryWeakArray value="Mutalisk"/>
-        <GlossaryWeakArray value="Immortal"/>
-    </CUnit>
-    <CUnit id="SiegeTankSieged">
-        <GlossaryStrongArray value="Marine"/>
-        <GlossaryStrongArray value="Hydralisk"/>
-        <GlossaryStrongArray value="Stalker"/>
-        <GlossaryWeakArray value="Banshee"/>
-        <GlossaryWeakArray value="Mutalisk"/>
-        <GlossaryWeakArray value="Immortal"/>
-    </CUnit>
+    <!-- No Longer Needed -->
     <CUnit id="Barracks">
         <BehaviorArray Link="FireSuppressionSystem"/>
         <AbilArray Link="MengskMercTrain"/>

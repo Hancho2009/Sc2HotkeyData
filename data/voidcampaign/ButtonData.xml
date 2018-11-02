@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Catalog>
+    <CButton id="AcidExplosionImmunity">
+        <Icon value="Assets\Textures\btn-upgrade-terran-acidexplosionimmunity.dds"/>
+    </CButton>
     <CButton id="AetherMawAetherStorm">
         <Icon value="Assets\Textures\abilityicon_pulse_square.dds"/>
     </CButton>
@@ -13,7 +16,22 @@
         <Icon value="Assets\Textures\btn-ability-zerg-consume.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-zerg-consume.dds"/>
     </CButton>
-    <CButton id="DefilerMPPlague">
+    <CButton id="HaveNovaGadgetDefensiveDroneSummon">
+        <Icon value="Assets\Textures\talent-raynor-level05-pointdefensedrones.dds"/>
+        <AlertIcon value="Assets\Textures\talent-raynor-level05-pointdefensedrones.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <Placeholder value="1"/>
+    </CButton>
+    <CButton id="NovaDomination">
+        <Icon value="Assets\Textures\btn-ability-nova-domination.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <AlertIcon value="Assets\Textures\btn-ability-nova-domination.dds"/>
+    </CButton>
+    <CButton id="NovaPlasmaBlast">
+        <Icon value="Assets\Textures\btn-ability-terran-raynorplasmagun.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-raynorplasmagun.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <TintRacially value="1"/>
         <Placeholder value="1"/>
     </CButton>
     <CButton id="HybridFAoEStun">
@@ -24,11 +42,12 @@
         <Tooltip value="Button/Tooltip/HydraliskDenImpaler"/>
         <AlertTooltip value="Button/Tooltip/HydraliskDenImpaler"/>
     </CButton>
-    <CButton id="ImmortalOverload">
-        <Tooltip value="Button/Tooltip/ImmortalBarrierBase"/>
-        <AlertTooltip value="Button/Tooltip/ImmortalBarrierBase"/>
-    </CButton>
     <CButton id="KerriganNova"/>
+    <CButton id="NovaWeaponPlasmaBlastNew" parent="WizButton" art="Assets\Textures\btn-upgrade-terran-plasmashot.dds">
+        <EditorCategories value="Race:Terran"/>
+        <Hotkey value="Button/Hotkey/NovaWeaponCanisterRifleSnipe"/>
+        <HotkeyAlias value="NovaWeaponCanisterRifleSnipe"/>
+    </CButton>
     <CButton id="PhaseCannon">
         <Icon value="Assets\Textures\btn-ability-protoss-phasecannon.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-phasecannon.dds"/>
@@ -38,10 +57,21 @@
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="PhotonCannonPassive"/>
     </CButton>
+    <CButton id="DefenseSystem">
+        <Icon value="Assets\Textures\btn-ability-terran-pointdefenselaser.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <TintRacially value="1"/>
+        <HotkeyAlias value="PointDefense"/>
+        <Placeholder value="1"/>
+    </CButton>
     <CButton id="ProdigalEngineer">
         <Icon value="Assets\Textures\btn-ability-protoss-prodigalengineer.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-prodigalengineer.dds"/>
         <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="NovaReleaseMinion">
+        <Icon value="Assets\Textures\btn-command-cancel.dds"/>
+        <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="Servitors">
         <Icon value="Assets\Textures\btn-unit-protoss-replicant.dds"/>
@@ -55,6 +85,23 @@
         <Icon value="Assets\Textures\btn-building-protoss-photoncannon.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
+    <CButton id="NovaInfestedSiegeTankRoot">
+        <Icon value="Assets\Textures\btn-ability-zerg-root-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-root-color.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CButton id="NovaInfestedSiegeTankUproot">
+        <Icon value="Assets\Textures\btn-ability-zerg-uproot-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-uproot-color.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CButton id="NovaArmorBlinkSuitBlink">
+        <Icon value="Assets\Textures\btn-upgrade-nova-blink.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-nova-blink.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <Hotkey value="Button/Hotkey/ApolloCloakOnNova"/>
+        <HotkeyAlias value="ApolloCloakOnNova"/>
+    </CButton>
     <CButton id="UmbraSpireRebirth">
         <Icon value="Assets\Textures\btn-ability-zerg-sporecloud.dds"/>
         <HotkeyAlias value="UmbraSpireSpawnShadowOfTheVoid"/>
@@ -63,6 +110,12 @@
         <Icon value="Assets\Textures\btn-ability-protoss-chargedblast.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-chargedblast.dds"/>
         <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="NovaWeaponBlazefireBladeShadowFury">
+        <Icon value="Assets\Textures\btn-ability-nova-furyofone.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Hotkey value="Button/Hotkey/NovaWeaponCanisterRifleSnipe"/>
+        <HotkeyAlias value="NovaWeaponCanisterRifleSnipe"/>
     </CButton>
     <CButton id="VoidTendrilUnstableEnergy">
         <Icon value="Assets\Textures\btn-tips-terran-energynova.dds"/>
@@ -142,8 +195,8 @@
         <EditorCategories value="Race:Protoss"/>
     </CButton>
     <CButton id="AscendantPassive">
-        <Icon value="Assets\Textures\btn-unit-protoss-hightemplar-taldarim.dds"/>
-        <AlertIcon value="Assets\Textures\btn-unit-protoss-hightemplar-taldarim.dds"/>
+        <Icon value="Assets\Textures\BTN-Unit-Protoss-HighTemplar-Taldarim.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Unit-Protoss-HighTemplar-Taldarim.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
     <CButton id="DarkTemplarCliffBlink">
@@ -299,6 +352,8 @@
         <Icon value="Assets\Textures\btn-ability-protoss-gravitonbeam-color.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-gravitonbeam-color.dds"/>
         <EditorCategories value="Race:Protoss"/>
+        <Hotkey value="Button/Hotkey/GravitonBeam"/>
+        <HotkeyAlias value="GravitonBeam"/>
     </CButton>
     <CButton id="ImmortalShakurasAntiAirMissiles">
         <Icon value="Assets\Textures\btn-ability-terran-haywiremissile.dds"/>
@@ -644,6 +699,11 @@
     <CButton id="DarkTemplarStunningBlow">
         <Icon value="Assets\Textures\btn-upgrade-zerg-viciousglaive.dds"/>
     </CButton>
+    <CButton id="NovaArmorPredatorBattlesuit">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-criussuit.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <!--Placeholder value="1"/-->
+    </CButton>
     <CButton id="NovaWeaponPsiBladeSwap">
         <Icon value="Assets\Textures\btn-upgrade-nova-equipment-monomolecularblade.dds"/>
         <EditorCategories value="Race:Terran"/>
@@ -651,7 +711,7 @@
     <CButton id="NovaWeaponSwap">
         <Icon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <Placeholder value="1"/>
+        <!--Placeholder value="1"/-->
     </CButton>
     <CButton id="NovaWeaponCanisterRifleSnipe">
         <Icon value="Assets\Textures\btn-ability-terran-snipe-color.dds"/>
@@ -695,6 +755,11 @@
         <EditorCategories value="Race:Terran"/>
         <HidesForSimpleText value="0"/>
     </CButton>
+    <CButton id="NovaArmorMoebiusSuit">
+        <Icon value="Assets\Textures\btn-upgrade-nova-equipment-apolloinfantrysuit.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
     <CButton id="NovaHelmetGhostVisor">
         <Icon value="Assets\Textures\btn-upgrade-nova-equipment-ghostvisor.dds"/>
         <EditorCategories value="Race:Terran"/>
@@ -702,7 +767,7 @@
     <CButton id="NovaHelmetSensorVisor">
         <Icon value="Assets\Textures\btn-techupgrade-terran-distortionsensors.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <Placeholder value="1"/>
+        <!--Placeholder value="1"/-->
     </CButton>
     <CButton id="NovaHelmetRangefinderOculus">
         <Icon value="Assets\Textures\btn-upgrade-nova-equipment-rangefinderoculus.dds"/>
@@ -718,6 +783,12 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="NovaGadgetPulseGrenades"/>
     </CButton>
+    <CButton id="NovaGadgetHolographicDecoy">
+        <Icon value="Assets\Textures\btn-upgrade-nova-holographicdecoy.dds"/>
+        <Hotkey value="Button/Hotkey/NovaGadgetPulseGrenades"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="NovaGadgetPulseGrenades"/>
+    </CButton>
     <CButton id="CloakOnNova">
         <Icon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
@@ -725,13 +796,19 @@
         <HotkeyAlias value="CloakOnBanshee"/>
         <HotkeySet value="Cloak"/>
     </CButton>
+    <CButton id="ApolloCloakOnNova">
+        <Icon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
     <CButton id="SuperStimpackNova">
         <Icon value="Assets\Textures\btn-upgrade-terran-superstimppack.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-terran-superstimppack.dds"/>
+        <Hotkey value="Button/Hotkey/NovaGadgetPulseGrenades"/>
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="NovaGadgetPulseGrenades"/>
         <Universal value="1"/>
-        <Hotkey value="Button/Hotkey/NovaGadgetPulseGrenades"/>
     </CButton>
     <CButton id="EMPNova">
         <Icon value="Assets\Textures\btn-ability-terran-emp-color.dds"/>
@@ -939,6 +1016,7 @@
         <TintRacially value="1"/>
         <Universal value="1"/>
         <HidesForSimpleText value="0"/>
+        <HotkeyAlias value="Attack"/>
     </CButton>
     <CButton id="MoveChampions">
         <Icon value="Assets\Textures\btn-command-move.dds"/>
@@ -948,6 +1026,7 @@
         <Universal value="1"/>
         <Hotkey value="Button/Hotkey/Move"/>
         <HidesForSimpleText value="0"/>
+        <HotkeyAlias value="Move"/>
     </CButton>
     <CButton id="DarkArchonChampionMaelstrom">
         <Icon value="Assets\Textures\btn-ability-terran-tosh-mindblast.dds"/>
@@ -1530,7 +1609,6 @@
         <AlertIcon value="Assets\Textures\btn-ability-zerg-blindingcloud.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
-    <CButton id="TemporalField"/>
     <CButton id="FenixLeapAttack">
         <Icon value="Assets\Textures\btn-ability-kerrigan-leapingstrike.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-kerrigan-leapingstrike.dds"/>
@@ -3118,12 +3196,6 @@
         <AlertIcon value="Assets\Textures\btn-ability-protoss-reclamation.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
-    <CButton id="TerranVehicleAndShipWeaponsLevel1"/>
-    <CButton id="TerranVehicleAndShipWeaponsLevel2"/>
-    <CButton id="TerranVehicleAndShipWeaponsLevel3"/>
-    <CButton id="TerranVehicleAndShipPlatingLevel1"/>
-    <CButton id="TerranVehicleAndShipPlatingLevel2"/>
-    <CButton id="TerranVehicleAndShipPlatingLevel3"/>
     <CButton id="MegalithCutterDock">
         <Icon value="Assets\Textures\btn-missing-kaeo.dds"/>
     </CButton>
@@ -3141,6 +3213,7 @@
     </CButton>
     <CButton id="StukovBossBlast">
         <Icon value="Assets\Textures\btn-missing-kaeo.dds"/>
+        <HotkeyAlias value=""/>
     </CButton>
     <CButton id="AmonHostDeathBlast">
         <Icon value="Assets\Textures\btn-missing-kaeo.dds"/>
@@ -3220,6 +3293,83 @@
     <CButton id="NovaNukeTimer">
         <Icon value="Assets\Textures\btn-ability-terran-armnuke.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <Placeholder value="1"/>
+        <!--Placeholder value="1"/-->
+    </CButton>
+    <CButton id="LaserTargetingSystemReaper">
+        <Icon value="Assets\Textures\btn-upgrade-terran-lazertargetingsystem.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
+    <CButton id="LaserTargetingSystemMarine">
+        <Icon value="Assets\Textures\btn-upgrade-terran-lazertargetingsystem.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
+    <CButton id="LaserTargetingSystemMarauder">
+        <Icon value="Assets\Textures\btn-upgrade-terran-lazertargetingsystem.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
+    <CButton id="MagrailMunitions">
+        <Icon value="Assets\Textures\btn-upgrade-terran-magrailmunitions.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-surfacetoairtargeting.dds"/>
+    </CButton>
+    <CButton id="TrainInfestedSiegeTank">
+        <Icon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CButton id="BlightbringerCreateEggs">
+        <Icon value="Assets\Textures\btn-unit-zerg-egg.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CButton id="BlightbringerCreateLargeEggs">
+        <Icon value="Assets\Textures\btn-unit-zerg-egg.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CButton id="HercAcidExplosionImmunity">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-hydriaticacid.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <!--Placeholder value="1"/-->
+    </CButton>
+    <CButton id="NovaEradicatorRailgun">
+        <Icon value="Assets\Textures\btn-ability-terran-penetratorround.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-penetratorround.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
+    <CButton id="NovaEradicatorRailgunFire">
+        <Icon value="Assets\Textures\btn-ability-terran-penetratorround.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-penetratorround.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="NovaEradicatorRailgun"/>
+    </CButton>
+    <CButton id="NovaEradicatorAssaultMode">
+        <Icon value="Assets\Textures\btn-unit-terran-vikingassault.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-vikingassault.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
+    <CButton id="NovaEradicatorFlamethrowerOff">
+        <Icon value="Assets\Textures\btn-upgrade-terran-twin-linkedflamethrower.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel1.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="NovaEradicatorLaunchMissile">
+        <Icon value="Assets\Textures\btn-weapon-terran-hailstormmissiles.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="NovaEradicatorMissileMode">
+        <Icon value="Assets\Textures\btn-unit-terran-vikingfighter.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-vikingfighter.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
+    <CButton id="NovaEradicatorFlamethrowerOn">
+        <Icon value="Assets\Textures\btn-upgrade-terran-twin-linkedflamethrower.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-twin-linkedflamethrower.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="HercGrapple">
+        <Icon value="Assets\Textures\btn-tips-terran-penetrator.dds"/>
+        <AlertIcon value="Assets\Textures\btn-tips-terran-penetrator.dds"/>
+        <EditorCategories value="Race:Terran"/>
     </CButton>
 </Catalog>

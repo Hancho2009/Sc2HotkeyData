@@ -65,8 +65,7 @@ dependencies = [
     ['core', 'liberty', 'libertycampaign', 'swarm', 'swarmcampaign', 'void', 'voidcampaign', 'voidstory'],
     ['core', 'liberty', 'libertycampaign', 'swarm', 'swarmcampaign', 'void', 'voidcampaign', 'alliedcommanders'],
     ['core', 'liberty', 'libertycampaign', 'swarm', 'swarmcampaign', 'void', 'voidcampaign', 'novastoryassets'],
-    ['core', 'liberty', 'libertycampaign', 'swarm', 'swarmcampaign', 'void', 'voidcampaign', 'campaigncommon'],
-    ['core', 'liberty', 'libertycampaign', 'swarm', 'swarmcampaign', 'void', 'voidcampaign', 'campaigncommon', 'novastoryassets', 'novacampaign']]
+    ['core', 'liberty', 'libertycampaign', 'swarm', 'swarmcampaign', 'void', 'voidcampaign', 'novastoryassets', 'novacampaign']]
 
 # tree for loading depencies to avoid loading the same dependencies too many times
 depenload = ['core', 'liberty', ['challenges',
@@ -78,9 +77,8 @@ depenload = ['core', 'liberty', ['challenges',
                                                                                  'voidprologue',
                                                                                  ['void', 'voidcampaign', ['voidstory',
                                                                                                            'alliedcommanders',
-                                                                                                           'novastoryassets'
-                                                                                                           'campaigncommon',
-                                                                                                           ['novastoryassets', 'campaigncommon', 'novacampaign']]]]]]]]
+                                                                                                           'novastoryassets',
+                                                                                                           ['novastoryassets', 'novacampaign']]]]]]]]
 
 unit_path_lists = []; button_path_lists = []; hotkey_path_lists = []
 for journey in dependencies:

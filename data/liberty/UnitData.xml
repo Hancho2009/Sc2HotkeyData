@@ -1,5 +1,58 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Catalog>
+    <!--                                                                                         -->
+    <!--                                                                                         -->
+    <!-- Added For Wizards ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!--                                                                                         -->
+    <!--                                                                                         -->
+    <CUnit default="1" id="WizSimpleMissile" parent="MISSILE_INVULNERABLE"/>
+    <!--                                                                                         -->
+    <!--                                                                                         -->
+    <!-- Defaults ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!--                                                                                         -->
+    <!--                                                                                         -->
+    <CUnit default="1" id="MineralFieldDefault">
+        <Name value="Unit/Name/MineralField"/>
+        <Description value="Button/Tooltip/MineralField"/>
+        <DeathRevealRadius value="3"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="CreateVisible" value="1"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <FlagArray index="ClearRallyOnTargetLost" value="0"/>
+        <ResourceState value="Harvestable"/>
+        <ResourceType value="Minerals"/>
+        <FogVisibility value="Snapshot"/>
+        <EditorFlags index="NeutralDefault" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="10000"/>
+        <LifeMax value="10000"/>
+        <LifeArmor value="10"/>
+        <BehaviorArray Link="MineralFieldMinerals"/>
+        <Radius value="0.75"/>
+        <SeparationRadius value="0.75"/>
+        <Footprint value="FootprintMineralsRounded"/>
+        <SubgroupPriority value="1"/>
+        <MinimapRadius value="0.75"/>
+        <EditorCategories value="ObjectType:Resource,ObjectFamily:Melee"/>
+        <Fidget DelayMax="0"/>
+    </CUnit>
+    <CUnit default="1" id="RichMineralFieldDefault" parent="MineralFieldDefault">
+        <Name value="Unit/Name/RichMineralField"/>
+        <Description value="Button/Tooltip/RichMineralField"/>
+        <BehaviorArray index="0" Link="HighYieldMineralFieldMinerals"/>
+    </CUnit>
     <CUnit default="1" id="BroodlingDefault">
         <Name value="Unit/Name/Broodling"/>
         <Description value="Button/Tooltip/Broodling"/>
@@ -243,6 +296,73 @@
         <SubgroupAlias value="CreepTumorBurrowed"/>
         <TechAliasArray value="Alias_CreepTumor"/>
         <AIEvaluateAlias value="CreepTumor"/>
+    </CUnit>
+    <CUnit id="RenegadeLongboltMissileWeapon" parent="MISSILE_HALFLIFE">
+        <Race value="Terr"/>
+        <Mover value="LongboltMissileWeapon"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="RenegadeMissileTurret">
+        <DeathRevealRadius value="3"/>
+        <Race value="Terr"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="CreateVisible" value="1"/>
+        <FlagArray index="Untooltipable" value="0"/>
+        <FlagArray index="PreventDefeat" value="1"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="PenaltyRevealed" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="AIDefense" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="250"/>
+        <LifeMax value="250"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
+        <Sight value="11"/>
+        <CostCategory value="Technology"/>
+        <CostResource index="Minerals" value="100"/>
+        <RepairTime value="25"/>
+        <AttackTargetPriority value="19"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <BehaviorArray Link="TerranBuildingBurnDown"/>
+        <BehaviorArray Link="Detector11"/>
+        <BehaviorArray Link="UnderConstruction"/>
+        <WeaponArray Link="RenegadeLongboltMissile" Turret="MissileTurret"/>
+        <CardLayouts>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Detector" Type="Passive" Requirements="NotUnderConstruction" Row="2" Column="3"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <SeparationRadius value="0.75"/>
+        <Footprint value="Footprint2x2Contour"/>
+        <PlacementFootprint value="Footprint2x2"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="0.75"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="OverseerZagaraACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
     </CUnit>
     <!--For use in place of Neutral Raised Supply Depots. Will *not* destroy other destructibles in the area when it dies.-->
     <CUnit id="Rocks2x2NonConjoined">
@@ -605,6 +725,9 @@
         <TechAliasArray value="Alias_Reactor"/>
         <AIEvaluateAlias value="Reactor"/>
     </CUnit>
+    <CUnit id="QueenZagaraACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
     <CUnit id="UrsadakFemaleExotic" parent="Critter">
         <Name value="Unit/Name/UrsadakFemale"/>
         <Description value="Button/Tooltip/CritterUrsadakFemaleExotic"/>
@@ -949,75 +1072,13 @@
         <TechTreeUnlockedUnitArray value="Infestor"/>
         <CostCategory value="Technology"/>
     </CUnit>
-    <CUnit id="RichMineralField">
-        <DeathRevealRadius value="3"/>
-        <Mob value="Multiplayer"/>
-        <ResourceState value="Harvestable"/>
-        <ResourceType value="Minerals"/>
-        <FogVisibility value="Snapshot"/>
-        <LifeStart value="10000"/>
-        <LifeMax value="10000"/>
-        <LifeArmor value="10"/>
-        <Radius value="0.75"/>
-        <SeparationRadius value="0.75"/>
-        <Footprint value="FootprintMineralsRounded"/>
-        <SubgroupPriority value="1"/>
-        <MinimapRadius value="0.75"/>
-        <EditorCategories value="ObjectType:Resource,ObjectFamily:Melee"/>
-        <FlagArray index="Turnable" value="0"/>
-        <FlagArray index="CreateVisible" value="1"/>
-        <FlagArray index="Uncommandable" value="1"/>
-        <FlagArray index="UseLineOfSight" value="1"/>
-        <FlagArray index="TownAlert" value="1"/>
-        <FlagArray index="Invulnerable" value="1"/>
-        <FlagArray index="NoPortraitTalk" value="1"/>
-        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
-        <FlagArray index="ClearRallyOnTargetLost" value="0"/>
-        <Attributes index="Structure" value="1"/>
-        <EditorFlags index="NeutralDefault" value="1"/>
-        <PlaneArray index="Ground" value="1"/>
-        <Collide index="Burrow" value="1"/>
-        <Collide index="Ground" value="1"/>
-        <Collide index="Structure" value="1"/>
-        <Collide index="RoachBurrow" value="1"/>
-        <Collide index="ForceField" value="1"/>
-        <BehaviorArray Link="HighYieldMineralFieldMinerals"/>
-        <Fidget DelayMax="0"/>
+    <CUnit id="RichMineralField" parent="RichMineralFieldDefault"/>
+    <CUnit id="MineralField" parent="MineralFieldDefault"/>
+    <CUnit id="MineralField750" parent="MineralFieldDefault">
+        <BehaviorArray index="0" Link="MineralFieldMinerals750"/>
     </CUnit>
-    <CUnit id="MineralField">
-        <DeathRevealRadius value="3"/>
-        <Mob value="Multiplayer"/>
-        <ResourceState value="Harvestable"/>
-        <ResourceType value="Minerals"/>
-        <FogVisibility value="Snapshot"/>
-        <LifeStart value="10000"/>
-        <LifeMax value="10000"/>
-        <LifeArmor value="10"/>
-        <Radius value="0.75"/>
-        <SeparationRadius value="0.75"/>
-        <Footprint value="FootprintMineralsRounded"/>
-        <SubgroupPriority value="1"/>
-        <MinimapRadius value="0.75"/>
-        <EditorCategories value="ObjectType:Resource,ObjectFamily:Melee"/>
-        <FlagArray index="Turnable" value="0"/>
-        <FlagArray index="CreateVisible" value="1"/>
-        <FlagArray index="Uncommandable" value="1"/>
-        <FlagArray index="UseLineOfSight" value="1"/>
-        <FlagArray index="TownAlert" value="1"/>
-        <FlagArray index="Invulnerable" value="1"/>
-        <FlagArray index="NoPortraitTalk" value="1"/>
-        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
-        <FlagArray index="ClearRallyOnTargetLost" value="0"/>
-        <Attributes index="Structure" value="1"/>
-        <EditorFlags index="NeutralDefault" value="1"/>
-        <PlaneArray index="Ground" value="1"/>
-        <Collide index="Burrow" value="1"/>
-        <Collide index="Ground" value="1"/>
-        <Collide index="Structure" value="1"/>
-        <Collide index="RoachBurrow" value="1"/>
-        <Collide index="ForceField" value="1"/>
-        <BehaviorArray Link="MineralFieldMinerals"/>
-        <Fidget DelayMax="0"/>
+    <CUnit id="RichMineralField750" parent="RichMineralFieldDefault">
+        <BehaviorArray index="0" Link="HighYieldMineralFieldMinerals750"/>
     </CUnit>
     <CUnit id="ThorAAWeapon" parent="MISSILE">
         <Race value="Terr"/>
@@ -2204,6 +2265,11 @@
         <TauntDuration index="Cheer" value="5"/>
         <TauntDuration index="Dance" value="5"/>
     </CUnit>
+    <CUnit id="HighTemplarSkinPreview">
+        <Race value="Prot"/>
+        <EditorFlags index="NoPlacement" value="1"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+    </CUnit>
     <CUnit id="DarkTemplar">
         <DeathRevealRadius value="3"/>
         <Race value="Prot"/>
@@ -2806,6 +2872,12 @@
         <WeaponArray Turret="WarpPrismPhasingRotate"/>
         <RepairTime value="50"/>
     </CUnit>
+    <CUnit id="WarpPrismSkinPreview">
+        <Name value="Unit/Name/WarpPrism"/>
+        <Race value="Prot"/>
+        <EditorFlags index="NoPlacement" value="1"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+    </CUnit>
     <CUnit id="Stalker">
         <DeathRevealRadius value="3"/>
         <Race value="Prot"/>
@@ -3091,6 +3163,8 @@
         <ShieldRegenDelay value="10"/>
         <EnergyMax value="100"/>
         <EnergyRegenRate value="0.5625"/>
+        <EffectArray index="Create" value="NexusCreateSet"/>
+        <EffectArray index="Birth" value="NexusBirthSet"/>
     </CUnit>
     <CUnit id="Mothership">
         <DeathRevealRadius value="3"/>
@@ -4031,6 +4105,12 @@
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
         <GlossaryPriority value="135"/>
     </CUnit>
+    <CUnit id="SiegeTankSkinPreview">
+        <Name value="Unit/Name/SiegeTank"/>
+        <Race value="Terr"/>
+        <EditorFlags index="NoPlacement" value="1"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+    </CUnit>
     <CUnit id="Thor">
         <DeathRevealRadius value="3"/>
         <Facing value="135"/>
@@ -4107,6 +4187,91 @@
         </Fidget>
         <TauntDuration index="Cheer" value="5"/>
         <TauntDuration index="Dance" value="5"/>
+    </CUnit>
+    <CUnit id="ThorAP">
+        <SelectAlias value="Thor"/>
+        <Name value="Unit/Name/Thor"/>
+        <Description value="Button/Tooltip/Thor"/>
+        <TechAliasArray value="Alias_Thor"/>
+        <LeaderAlias value="Thor"/>
+        <HotkeyAlias value="Thor"/>
+        <SubgroupAlias value="Thor"/>
+        <DeathRevealRadius value="3"/>
+        <Facing value="135"/>
+        <Race value="Terr"/>
+        <Mob value="Multiplayer"/>
+        <LifeStart value="400"/>
+        <LifeMax value="400"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranVehiclePlating"/>
+        <Speed value="1.875"/>
+        <Acceleration value="1000"/>
+        <LateralAcceleration value="46.0625"/>
+        <Food value="-6"/>
+        <CostCategory value="Army"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TurnBeforeMove" value="1"/>
+        <FlagArray index="ArmySelect" value="1"/>
+        <CostResource index="Minerals" value="300"/>
+        <CostResource index="Vespene" value="200"/>
+        <RepairTime value="60"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="160"/>
+        <Radius value="1"/>
+        <SeparationRadius value="1"/>
+        <InnerRadius value="1"/>
+        <ScoreMake value="500"/>
+        <ScoreKill value="500"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="10"/>
+        <MinimapRadius value="1"/>
+        <TurningRate value="360"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Sight value="11"/>
+        <WeaponArray Link="ThorsHammer"/>
+        <WeaponArray Link="LanceMissileLaunchers"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="move"/>
+        <AbilArray Link="ThorNormalMode"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="ExplosiveMode" Type="AbilCmd" AbilCmd="ThorNormalMode,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="ThorNormalMode,Cancel" Row="2" Column="4"/>
+        </CardLayouts>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Massive" value="1"/>
+        <TacticalAIThink value="AIThinkThor"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <GlossaryCategory value="Unit/Category/TerranUnits"/>
+        <HotkeyCategory value="Unit/Category/TerranUnits"/>
+        <GlossaryPriority value="141"/>
+        <GlossaryStrongArray value="Marine"/>
+        <GlossaryStrongArray value="Mutalisk"/>
+        <GlossaryStrongArray value="Stalker"/>
+        <GlossaryWeakArray value="Marauder"/>
+        <GlossaryWeakArray value="Zergling"/>
+        <GlossaryWeakArray value="Immortal"/>
+        <CargoSize value="8"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="10"/>
+            <ChanceArray index="Idle" value="90"/>
+        </Fidget>
+        <TauntDuration index="Cheer" value="5"/>
+        <TauntDuration index="Dance" value="5"/>
+    </CUnit>
+    <CUnit id="ThorAALance" parent="MISSILE">
+        <Race value="Terr"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
     </CUnit>
     <CUnit id="Banshee">
         <DeathRevealRadius value="3"/>
@@ -4715,7 +4880,7 @@
         <ScoreKill value="125"/>
         <ScoreResult value="BuildOrder"/>
         <SubgroupPriority value="3"/>
-        <MinimapRadius value="1.25"/>
+        <MinimapRadius value="1.75"/>
         <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
         <FlagArray index="Turnable" value="0"/>
         <FlagArray index="PreventDefeat" value="1"/>
@@ -4896,7 +5061,7 @@
         <ScoreKill value="100"/>
         <ScoreResult value="BuildOrder"/>
         <SubgroupPriority value="3"/>
-        <MinimapRadius value="1.25"/>
+        <MinimapRadius value="1.75"/>
         <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
         <FlagArray index="Turnable" value="0"/>
         <FlagArray index="PreventDefeat" value="1"/>
@@ -5245,7 +5410,7 @@
         <ScoreKill value="250"/>
         <ScoreResult value="BuildOrder"/>
         <SubgroupPriority value="3"/>
-        <MinimapRadius value="1.25"/>
+        <MinimapRadius value="1.75"/>
         <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
         <FlagArray index="Turnable" value="0"/>
         <FlagArray index="PreventDefeat" value="1"/>
@@ -5478,6 +5643,12 @@
         <CostResource index="Vespene" value="100"/>
         <ScoreResult value="BuildOrder"/>
         <ScoreMake value="200"/>
+    </CUnit>
+    <CUnit id="LiberatorSkinPreview">
+        <Name value="Unit/Name/Liberator"/>
+        <Race value="Terr"/>
+        <EditorFlags index="NoPlacement" value="1"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
     </CUnit>
     <CUnit id="VikingAssault">
         <LeaderAlias value="VikingFighter"/>
@@ -6977,6 +7148,8 @@
         <CostResource index="Minerals" value="350"/>
         <TechTreeProducedUnitArray value="Larva"/>
         <TechTreeProducedUnitArray value="Queen"/>
+        <EffectArray index="Create" value="HatcheryCreateSet"/>
+        <EffectArray index="Birth" value="HatcheryBirthSet"/>
     </CUnit>
     <CUnit id="Lair">
         <TechAliasArray value="Alias_Hatchery"/>
@@ -7424,7 +7597,7 @@
         </CardLayouts>
         <CostCategory value="Technology"/>
         <CostResource index="Minerals" value="150"/>
-        <LeaderAlias value=""/>
+        <LeaderAlias value="SpineCrawler"/>
         <HotkeyAlias value="SpineCrawler"/>
         <WeaponArray Turret="SpineCrawlerUprooted"/>
     </CUnit>
@@ -7559,7 +7732,7 @@
         </CardLayouts>
         <CostCategory value="Technology"/>
         <CostResource index="Minerals" value="125"/>
-        <LeaderAlias value=""/>
+        <LeaderAlias value="SporeCrawler"/>
         <HotkeyAlias value="SporeCrawler"/>
         <WeaponArray Turret="SporeCrawlerUprooted"/>
     </CUnit>
@@ -8900,6 +9073,10 @@
         <Footprint value="Footprint1x1BlockCreep"/>
         <PlacementFootprint value="Footprint1x1"/>
     </CUnit>
+    <CUnit id="PermanentCreepBlocker1x1" parent="PATHINGBLOCKER">
+        <Footprint value="PermanentFootprint1x1BlockCreep"/>
+        <PlacementFootprint value="Footprint1x1"/>
+    </CUnit>
     <!-- Unit Pathing Blockers do not perform as well as doodad Pathing Blockers, however, they can be dynamically turned on and off through triggers. -->
     <CUnit id="PathingBlocker1x1" parent="PATHINGBLOCKER">
         <Footprint value="Footprint1x1"/>
@@ -9092,6 +9269,8 @@
         <TechTreeProducedUnitArray value="SCV"/>
         <TechTreeProducedUnitArray value="PlanetaryFortress"/>
         <TechTreeProducedUnitArray value="OrbitalCommand"/>
+        <EffectArray index="Create" value="CCCreateSet"/>
+        <EffectArray index="Birth" value="CCBirthSet"/>
     </CUnit>
     <CUnit id="CommandCenterFlying">
         <LeaderAlias value="CommandCenter"/>
@@ -9444,6 +9623,7 @@
         </Fidget>
         <ShieldRegenDelay value="10"/>
         <RepairTime value="55"/>
+        <TauntDuration index="Dance" value="5"/>
     </CUnit>
     <CUnit id="CyberneticsCore">
         <DeathRevealRadius value="3"/>
@@ -9618,7 +9798,6 @@
         <FlagArray index="PreventDestroy" value="1"/>
         <FlagArray index="UseLineOfSight" value="1"/>
         <FlagArray index="ArmySelect" value="1"/>
-        <FlagArray index="Resistant" value="1"/>
         <CostResource index="Minerals" value="100"/>
         <CostResource index="Vespene" value="25"/>
         <RepairTime value="25"/>
@@ -10122,6 +10301,7 @@
             <ChanceArray index="Anim" value="50"/>
             <ChanceArray index="Idle" value="50"/>
         </Fidget>
+        <TauntDuration index="Dance" value="5"/>
     </CUnit>
     <CUnit id="QueenBurrowed">
         <AIEvaluateAlias value="Queen"/>
@@ -10457,7 +10637,7 @@
         <DeathRevealRadius value="3"/>
         <Race value="Zerg"/>
         <Mob value="Multiplayer"/>
-        <BehaviorArray Link="ChangelingDisguise"/>
+        <BehaviorArray Link="ChangelingDisguiseEx3"/>
         <LifeStart value="5"/>
         <LifeMax value="5"/>
         <LifeRegenRate value="0.2734"/>
@@ -10486,11 +10666,11 @@
         <Sight value="8"/>
         <AbilArray Link="stop"/>
         <AbilArray Link="move"/>
-        <AbilArray Link="DisguiseAsZealot"/>
+        <!--AbilArray Link="DisguiseAsZealot"/>
         <AbilArray Link="DisguiseAsMarineWithShield"/>
         <AbilArray Link="DisguiseAsMarineWithoutShield"/>
         <AbilArray Link="DisguiseAsZerglingWithWings"/>
-        <AbilArray Link="DisguiseAsZerglingWithoutWings"/>
+        <AbilArray Link="DisguiseAsZerglingWithoutWings"/-->
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
             <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
@@ -11127,6 +11307,11 @@
     <CUnit id="VikingACGluescreenDummy">
         <EditorFlags index="NoPlacement" value="1"/>
     </CUnit>
+    <CUnit id="Viking">
+        <Race value="Terr"/>
+        <EditorFlags index="NoPlacement" value="1"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+    </CUnit>
     <CUnit id="BansheeACGluescreenDummy">
         <EditorFlags index="NoPlacement" value="1"/>
     </CUnit>
@@ -11223,6 +11408,9 @@
     <CUnit id="BunkerACGluescreenDummy">
         <EditorFlags index="NoPlacement" value="1"/>
     </CUnit>
+    <CUnit id="BunkerUpgradedACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
     <CUnit id="MissileTurretACGluescreenDummy">
         <EditorFlags index="NoPlacement" value="1"/>
     </CUnit>
@@ -11295,79 +11483,229 @@
     <CUnit id="LeviathanACGluescreenDummy">
         <EditorFlags index="NoPlacement" value="1"/>
     </CUnit>
+    <CUnit id="SwarmHostACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="DarkPylonACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="SupplicantACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="StalkerTaldarimACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="SentryTaldarimACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="HighTemplarTaldarimACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="ImmortalTaldarimACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="ColossusTaldarimACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="WarpPrismTaldarimACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="PhotonCannonTaldarimACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <!--Nova's ACGlueScreenDummy Units-->
+    <CUnit id="EliteMarineACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="MarauderCommandoACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="SpecOpsGhostACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="HellbatRangerACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="StrikeGoliathACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="HeavySiegeTankACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="RaidLiberatorACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="RavenTypeIIACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="CovertBansheeACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="RailgunTurretACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="BlackOpsMissileTurretACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <!--Stukov's ACGlueScreenDummy Units-->
+    <CUnit id="StukovInfestedCivilianACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="StukovInfestedTrooperACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="StukovInfestedMarineACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="StukovInfestedSiegeTankACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="StukovInfestedDiamondbackACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="StukovInfestedBansheeACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="SILiberatorACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="StukovInfestedBunkerACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="StukovInfestedMissileTurretACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="StukovBroodQueenACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <!--Fenix ACGlueScreenDummy Units-->
+    <CUnit id="ZealotFenixACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="SentryFenixACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="AdeptFenixACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="ImmortalFenixACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="ColossusFenixACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="ObserverFenixACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="DisruptorACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="ScoutACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="CarrierFenixACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="PhotonCannonFenixACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <!--Dehaka ACGlueScreenDummy Units-->
+    <CUnit id="PrimalZerglingACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="PrimalRoachACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="PrimalHydraliskACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="PrimalSwarmHostACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="PrimalUltraliskACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="RavasaurACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="FireRoachACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="PrimalMutaliskACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="PrimalGuardianACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="CreeperHostACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="PrimalImpalerACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="TyrannozorACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="PrimalWurmACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <!--Horner ACGlueScreenDummy Units-->
+    <CUnit id="HHReaperACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="HHWidowMineACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="HHHellionTankACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="HHWraithACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="HHVikingACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="HHBattlecruiserACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="HHRavenACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="HHBomberPlatformACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="HHMercStarportACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="HHMissileTurretACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="TychusReaperACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="TychusWarhoundACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="TychusFirebatACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="TychusHERCACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="TychusMarauderACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="TychusGhostACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="TychusSpectreACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="TychusMedicACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="TychusSCVAutoTurretACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
     <!-- Dummy Units for the AC Gluescreen End -->
-    <CUnit id="MineralField750">
-        <DeathRevealRadius value="3"/>
-        <Mob value="Multiplayer"/>
-        <FlagArray index="Turnable" value="0"/>
-        <FlagArray index="CreateVisible" value="1"/>
-        <FlagArray index="Uncommandable" value="1"/>
-        <FlagArray index="UseLineOfSight" value="1"/>
-        <FlagArray index="TownAlert" value="1"/>
-        <FlagArray index="Invulnerable" value="1"/>
-        <FlagArray index="NoPortraitTalk" value="1"/>
-        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
-        <FlagArray index="ClearRallyOnTargetLost" value="0"/>
-        <ResourceState value="Harvestable"/>
-        <ResourceType value="Minerals"/>
-        <FogVisibility value="Snapshot"/>
-        <EditorFlags index="NeutralDefault" value="1"/>
-        <PlaneArray index="Ground" value="1"/>
-        <Collide index="Burrow" value="1"/>
-        <Collide index="Ground" value="1"/>
-        <Collide index="Structure" value="1"/>
-        <Collide index="RoachBurrow" value="1"/>
-        <Collide index="ForceField" value="1"/>
-        <Attributes index="Structure" value="1"/>
-        <LifeStart value="10000"/>
-        <LifeMax value="10000"/>
-        <LifeArmor value="10"/>
-        <BehaviorArray Link="MineralFieldMinerals750"/>
-        <Radius value="0.75"/>
-        <SeparationRadius value="0.75"/>
-        <Footprint value="FootprintMineralsRounded"/>
-        <SubgroupPriority value="1"/>
-        <MinimapRadius value="0.75"/>
-        <EditorCategories value="ObjectType:Resource,ObjectFamily:Melee"/>
-        <Fidget DelayMax="0"/>
-        <Name value="Unit/Name/MineralField"/>
-        <Description value="Button/Tooltip/MineralField"/>
-    </CUnit>
-    <CUnit id="RichMineralField750">
-        <DeathRevealRadius value="3"/>
-        <Mob value="Multiplayer"/>
-        <FlagArray index="Turnable" value="0"/>
-        <FlagArray index="CreateVisible" value="1"/>
-        <FlagArray index="Uncommandable" value="1"/>
-        <FlagArray index="UseLineOfSight" value="1"/>
-        <FlagArray index="TownAlert" value="1"/>
-        <FlagArray index="Invulnerable" value="1"/>
-        <FlagArray index="NoPortraitTalk" value="1"/>
-        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
-        <FlagArray index="ClearRallyOnTargetLost" value="0"/>
-        <ResourceState value="Harvestable"/>
-        <ResourceType value="Minerals"/>
-        <FogVisibility value="Snapshot"/>
-        <EditorFlags index="NeutralDefault" value="1"/>
-        <PlaneArray index="Ground" value="1"/>
-        <Collide index="Burrow" value="1"/>
-        <Collide index="Ground" value="1"/>
-        <Collide index="Structure" value="1"/>
-        <Collide index="RoachBurrow" value="1"/>
-        <Collide index="ForceField" value="1"/>
-        <Attributes index="Structure" value="1"/>
-        <LifeStart value="10000"/>
-        <LifeMax value="10000"/>
-        <LifeArmor value="10"/>
-        <BehaviorArray Link="HighYieldMineralFieldMinerals750"/>
-        <Radius value="0.75"/>
-        <SeparationRadius value="0.75"/>
-        <Footprint value="FootprintMineralsRounded"/>
-        <SubgroupPriority value="1"/>
-        <MinimapRadius value="0.75"/>
-        <EditorCategories value="ObjectType:Resource,ObjectFamily:Melee"/>
-        <Fidget DelayMax="0"/>
-        <Name value="Unit/Name/RichMineralField"/>
-        <Description value="Button/Tooltip/RichMineralField"/>
-    </CUnit>
 </Catalog>
