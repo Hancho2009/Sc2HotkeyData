@@ -30,7 +30,7 @@ You can open the SC2Data folder located at your Starcraft 2 install location i.e
 CascView.exe "C:\Program Files (x86)\StarCraft II\SC2Data"
 from campaigns and mods folder comes the files from the data folder.
 
-ButtonData.xml and UnitData.xml are from the base.sc2data folders.
+ButtonData.xml and UnitData.xml are from the base.sc2data\GameData folders.
 GameHotkeys.txt are from the enus.sc2data\LocalizedData folders.
 
 -	campaigns\liberty.sc2campaign -> libertycampaign
