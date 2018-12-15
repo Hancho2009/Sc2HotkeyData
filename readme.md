@@ -30,34 +30,6 @@ You can open the SC2Data folder located at your Starcraft 2 install location i.e
 CascView.exe "C:\Program Files (x86)\StarCraft II\SC2Data" 
 From the campaigns and mods folders comes the files for the Sc2HotkeyData\data folder.
 
-ButtonData.xml and UnitData.xml are from the base.sc2data\GameData folders.
-GameHotkeys.txt are from the enus.sc2data\LocalizedData folders.
-
--	campaigns\liberty.sc2campaign -> libertycampaign
--	campaigns\libertystory.sc2campaign -> libertystory
--	campaigns\swarm.sc2campaign -> swarmcampaign
--	campaigns\swarmstory.sc2campaign -> swarmstory
--	campaigns\void.sc2campaign -> voidcampaign
--	campaigns\voidstory.sc2campaign -> voidstory
-
--	mods\alliedcommanders.sc2mod -> alliedcommanders
--	mods\core.sc2mod -> core
--	mods\liberty.sc2mod -> liberty
--	mods\libertymulti.sc2mod -> libertymulti
--	mods\missionpacks\ -> novacampaign
--	mods\novastoryassets.sc2mod -> novastoryassets
--	mods\swarm.sc2mod -> swarm
--	mods\swarmmulti.sc2mod -> swarmmulti
--	mods\void.sc2mod -> void
--	mods\voidmulti.sc2mod -> voidmulti
--	mods\voidprologue.sc2mod -> voidprologue
--	mods\challenges.sc2mod -> challenges
--	mods\war3.sc2mod -> war3
--	mods\war3data.sc2mod -> war3data
--	mods\novabasic03.sc2mod -> novabasic03
--	mods\balancemulti.sc2mod -> balancemulti
--	mods\campaigncommon.sc2mod -> campaigncommon
-
 Casc Viewer had problems to extract the folders base.sc2maps, base2.sc2maps, base3.sc2maps from mods\novastoryassets.sc2mod.
 
 To get the information from arcade maps and mods open the sc2 map editor. File -> Open...
