@@ -95,6 +95,11 @@
         <Radius value="1"/>
         <EditorCategories value="ObjectType:Prop,ObjectFamily:Campaign"/>
     </CUnit>
+    <CUnit id="47DummyUnitFix">
+        <Race value="PZrg"/>
+        <CostResource index="Minerals" value="10"/>
+        <EditorCategories value=""/>
+    </CUnit>
     <CUnit id="ArbiterMP">
         <RepairTime value="22.5"/>
         <DamageDealtXP value="0"/>
@@ -13223,9 +13228,6 @@
             <LayoutButtons Face="ResearchBarrier" Type="AbilCmd" AbilCmd="RoboticsBayResearch,Research9" Row="0" Column="1"/>
             <LayoutButtons Face="ResearchAlarakVanguardIncreaseSplashArea" Type="AbilCmd" AbilCmd="RoboticsBayResearch,Research15" Row="0" Column="1"/>
             <LayoutButtons Face="ResearchAlarakVanguardIncreaseSplashAreaLocked" Type="Passive" Requirements="AlarakLevel06" Row="0" Column="1"/>
-            <LayoutButtons Face="ZeratulGraviticBoostersPassive" Type="Passive" Requirements="HaveZeratulArtifactTier2AndRoboticsBay" Row="1" Column="2"/>
-            <LayoutButtons Face="ZeratulResarchObserverSightRange" Type="Passive" Requirements="HaveZeratulArtifactTier3AndRoboticsBay" Row="2" Column="2"/>
-            <LayoutButtons Face="ZeratulResearchVoidExpanse" Type="Passive" Requirements="HaveZeratulArtifactTier2AndRoboticsBay" Row="1" Column="3"/>
         </CardLayouts>
         <Attributes index="Mechanical" value="1"/>
         <ScoreMake value="0"/>
