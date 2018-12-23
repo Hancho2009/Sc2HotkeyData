@@ -73,6 +73,35 @@
     <CUnit id="BarracksTechLab">
         <Collide index="Locust" value="1"/>
         <Collide index="Phased" value="1"/>
+        <AddedOnArray index="0" ParentBehaviorLink="AddonIsWorking"/>
+        <AddedOnArray index="1" ParentBehaviorLink="AddonIsWorking"/>
+        <AddedOnArray index="2" ParentBehaviorLink="AddonIsWorking"/>
+    </CUnit>
+    <CUnit id="Battlecruiser">
+        <LifeStart value="550"/>
+        <LifeMax value="550"/>
+        <EnergyStart value="0"/>
+        <EnergyMax value="0"/>
+        <EnergyRegenRate value="0"/>
+        <AbilArray index="0" Link="BattlecruiserStop"/>
+        <AbilArray index="1" Link="BattlecruiserAttack"/>
+        <AbilArray index="2" Link="BattlecruiserMove"/>
+        <AbilArray Link="Hyperjump"/>
+        <BehaviorArray index="0" removed="1"/>
+        <WeaponArray index="0" Link="BattlecruiserWeaponSwitch" Turret="Battlecruiser"/>
+        <WeaponArray index="1" removed="1"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="0" Face="Move" Type="AbilCmd" AbilCmd="BattlecruiserMove,Move" Row="0" Column="0"/>
+            <LayoutButtons index="1" Face="Stop" Type="AbilCmd" AbilCmd="BattlecruiserStop,Stop" Row="0" Column="1"/>
+            <LayoutButtons index="2" Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="BattlecruiserMove,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons index="3" Face="MovePatrol" Type="AbilCmd" AbilCmd="BattlecruiserMove,Patrol" Row="0" Column="3"/>
+            <LayoutButtons index="4" Face="Attack" Type="AbilCmd" AbilCmd="BattlecruiserAttack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Hyperjump" Type="AbilCmd" AbilCmd="Hyperjump,Execute" Row="2" Column="1"/>
+        </CardLayouts>
+        <SubgroupPriority value="80"/>
+        <EquipmentArray Effect="ATSLaserBatteryU" Icon="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds" Weapon="ATSLaserBattery"/>
+        <EquipmentArray Effect="ATALaserBatteryU" Icon="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds" Weapon="ATALaserBattery"/>
+        <GlossaryStrongArray index="0" value="Liberator"/>
     </CUnit>
     <CUnit id="BroodLord">
         <SubgroupPriority value="78"/>
@@ -860,7 +889,7 @@
     <CUnit id="Medivac">
         <SubgroupPriority value="60"/>
         <CardLayouts index="0">
-            <LayoutButtons Face="HighCapacityFuelTanks" Type="Passive" Requirements="HaveMedivacSpeedBoostUpgrade" Row="1" Column="0"/>
+            <LayoutButtons Face="RapidReignitionSystem" Type="Passive" Requirements="HaveMedivacSpeedBoostUpgrade" Row="1" Column="0"/>
         </CardLayouts>
         <GlossaryWeakArray value="MissileTurret"/>
         <GlossaryWeakArray value="SporeCrawler"/>
@@ -1331,6 +1360,8 @@
         <Collide index="Locust" value="1"/>
         <Collide index="Phased" value="1"/>
         <SubgroupPriority value="6"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="150"/>
     </CUnit>
     <CUnit id="SCV">
         <Collide index="Locust" value="1"/>
@@ -1533,12 +1564,15 @@
             <LayoutButtons index="2" Face="ResearchBansheeCloak" AbilCmd="StarportTechLabResearch,Research1" Column="2"/>
             <LayoutButtons index="3" Face="ResearchRavenEnergyUpgrade" AbilCmd="StarportTechLabResearch,Research4" Column="1"/>
             <LayoutButtons index="4" Face="BansheeSpeed" AbilCmd="StarportTechLabResearch,Research10"/>
-            <LayoutButtons index="5" Face="ResearchHighCapacityFuelTanks" AbilCmd="StarportTechLabResearch,Research15" Column="0"/>
+            <LayoutButtons index="5" Face="ResearchRapidReignitionSystem" AbilCmd="StarportTechLabResearch,Research15" Column="0"/>
             <LayoutButtons index="6" Face="ResearchBallisticRange" AbilCmd="StarportTechLabResearch,Research16" Row="1" Column="0"/>
             <LayoutButtons index="7" removed="1"/>
         </CardLayouts>
         <Collide index="Locust" value="1"/>
         <Collide index="Phased" value="1"/>
+        <AddedOnArray index="0" ParentBehaviorLink="AddonIsWorking"/>
+        <AddedOnArray index="1" ParentBehaviorLink="AddonIsWorking"/>
+        <AddedOnArray index="2" ParentBehaviorLink="AddonIsWorking"/>
     </CUnit>
     <CUnit id="Factory">
         <TechTreeProducedUnitArray index="1" value="WidowMine"/>
@@ -1597,6 +1631,9 @@
         </CardLayouts>
         <Collide index="Locust" value="1"/>
         <Collide index="Phased" value="1"/>
+        <AddedOnArray index="0" ParentBehaviorLink="AddonIsWorking"/>
+        <AddedOnArray index="1" ParentBehaviorLink="AddonIsWorking"/>
+        <AddedOnArray index="2" ParentBehaviorLink="AddonIsWorking"/>
     </CUnit>
     <CUnit id="Barracks">
         <CardLayouts index="0">
@@ -1609,24 +1646,6 @@
         <SubgroupPriority value="24"/>
         <BehaviorArray Link="TerranStructuresKnockbackBehavior"/>
     </CUnit>
-    <CUnit id="Battlecruiser">
-        <GlossaryStrongArray index="0" value="Liberator"/>
-        <LifeStart value="550"/>
-        <LifeMax value="550"/>
-        <BehaviorArray index="0" removed="1"/>
-        <AbilArray Link="Hyperjump"/>
-        <CardLayouts index="0">
-            <LayoutButtons Face="Hyperjump" Type="AbilCmd" AbilCmd="Hyperjump,Execute" Row="2" Column="1"/>
-        </CardLayouts>
-        <SubgroupPriority value="80"/>
-        <EnergyStart value="0"/>
-        <EnergyMax value="0"/>
-        <EnergyRegenRate value="0"/>
-        <WeaponArray index="0" Link="BattlecruiserWeaponSwitch" Turret="Battlecruiser"/>
-        <WeaponArray index="1" removed="1"/>
-        <EquipmentArray Effect="ATSLaserBatteryU" Icon="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds" Weapon="ATSLaserBattery"/>
-        <EquipmentArray Effect="ATALaserBatteryU" Icon="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds" Weapon="ATALaserBattery"/>
-    </CUnit>
     <CUnit id="RoboticsFacility">
         <CardLayouts index="0">
             <LayoutButtons Face="WarpinDisruptor" Type="AbilCmd" AbilCmd="RoboticsFacilityTrain,Train19" Row="0" Column="4"/>
@@ -1634,7 +1653,6 @@
         <Collide index="Locust" value="1"/>
         <Collide index="Phased" value="1"/>
         <SubgroupPriority value="22"/>
-        <CostResource index="Minerals" value="150"/>
     </CUnit>
     <CUnit id="TemplarArchive">
         <Collide index="Locust" value="1"/>
@@ -1658,7 +1676,6 @@
         <GlossaryStrongArray index="2" value="Adept"/>
         <GlossaryWeakArray index="0" value="SiegeTank"/>
         <GlossaryWeakArray index="2" value="Immortal"/>
-        <Food value="-4"/>
     </CUnit>
     <CUnit id="ThorAP">
         <WeaponArray index="0" Link="LanceMissileLaunchers"/>

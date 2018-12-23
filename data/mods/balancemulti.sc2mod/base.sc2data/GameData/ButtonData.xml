@@ -4,6 +4,16 @@
         <Icon value="Assets\Textures\btn-ability-protoss-wormholetransit-color.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-wormholetransit-color.dds"/>
     </CButton>
+    <CButton id="RapidReignitionSystem">
+        <Icon value="Assets\Textures\btn-upgrade-terran-highcapacityfueltanks.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-highcapacityfueltanks.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
+    <CButton id="ResearchRapidReignitionSystem">
+        <Icon value="Assets\Textures\btn-upgrade-terran-highcapacityfueltanks.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-highcapacityfueltanks.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
     <CButton id="ShieldBattery">
         <Icon value="Assets\Textures\btn-building-protoss-shieldbattery.dds"/>
         <AlertIcon value="Assets\Textures\btn-building-protoss-shieldbattery.dds"/>

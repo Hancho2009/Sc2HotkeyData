@@ -23,7 +23,7 @@ verify_hotkeydata.py	: Prints out inconsistentcies in what the same ability is b
 # Automatic Version
 A work in progress
 
-Data folder updated to sc2 patch 4.6.2 (69232)
+Data folder updated to sc2 patch 4.7.1 (70326)
 
 With the Casc Viewer from http://www.zezula.net/en/casc/main.html  
 You can open the SC2Data folder located at your Starcraft 2 install location i.e.: commandline 

@@ -274,6 +274,7 @@
     </CUnit>
     <CUnit id="CollapsibleTerranTowerDebris">
         <MinimapRadius value="2.5"/>
+        <FlagArray index="CreateVisible" value="1"/>
     </CUnit>
     <CUnit id="CollapsibleTerranTowerDiagonal">
         <MinimapRadius value="2.5"/>

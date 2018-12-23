@@ -11089,8 +11089,9 @@
         <LifeStart value="400"/>
         <LifeMax value="400"/>
         <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/HardenedMaterial"/>
         <Footprint value="FootprintRock2x2"/>
-        <MinimapRadius value="0"/>
+        <MinimapRadius value="2.5"/>
         <EditorCategories value="ObjectType:Destructible,ObjectFamily:Melee"/>
     </CUnit>
     <!-- Unit Pathing Blockers do not perform as well as doodad Pathing Blockers, however, they can be dynamically turned on and off through triggers. -->
@@ -11394,6 +11395,30 @@
         <EditorFlags index="NoPlacement" value="1"/>
     </CUnit>
     <CUnit id="AberrationACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="ZeratulStalkerACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="ZeratulSentryACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="ZeratulDarkTemplarACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="ZeratulImmortalACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="ZeratulDisruptorACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="ZeratulWarpPrismACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="ZeratulObserverACGluescreenDummy">
+        <EditorFlags index="NoPlacement" value="1"/>
+    </CUnit>
+    <CUnit id="ZeratulPhotonCannonACGluescreenDummy">
         <EditorFlags index="NoPlacement" value="1"/>
     </CUnit>
     <CUnit id="ScourgeACGluescreenDummy">
@@ -11707,5 +11732,4 @@
     <CUnit id="TychusSCVAutoTurretACGluescreenDummy">
         <EditorFlags index="NoPlacement" value="1"/>
     </CUnit>
-    <!-- Dummy Units for the AC Gluescreen End -->
 </Catalog>
